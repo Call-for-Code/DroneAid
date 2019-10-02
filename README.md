@@ -42,14 +42,9 @@ These symbols include those below, which represent a subset of the icons provide
 
 ## See it in action
 
-Take these steps to view the live demo:
+![Dashboard Screenshot](img/DashboardScreenshot.png)
 
-1. [Download](img/icons/icon-sos.png) or take a picture of one of the DroneAid symbols with your phone.
-2. Go to [droneaid.io](https://droneaid.io) on your computer.
-3. Activate your computer's camera.
-4. Test out the tracking by pointing the image on your phone at the computer's camera.
-
-Alternatively, you can print out the images and use them in place of the phone's screen.
+Our current implementation takes the video stream of DJI Tello drone and analyzes the frames to find and count symbols. See [tello-demo](tello-demo) for instructions on how to get it running.
 
 ## Set up and training a visual recognition model on the Symbol Language
 
@@ -70,8 +65,6 @@ See [ROADMAP.md](ROADMAP.md)
 * [TensorFlow.js](https://www.tensorflow.org/js) - Used to run inference on the browser
 * [Cloud Annotations](https://github.com/cloud-annotations/training) - Used for training the model
 * [Lens Studio](https://lensstudio.snapchat.com/) - Used to create the augmented reality and generate the imageset
-* [Strapi](https://strapi.io/) - Internal API tool
-* [Node-RED](https://nodered.org/) - Drone dashboard implementation with visual scripting
 
 ## Contributing
 
