@@ -26,7 +26,7 @@ This directory contains the instructions for viewing the streaming video from a 
    ```  
 1. Change to `tello-demo` directory
    ```
-   $ cd ../DroneAid/tello-demo
+   $ cd ../tello-demo
    ```  
 1. Install dependencies
    ```
