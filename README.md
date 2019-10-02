@@ -28,6 +28,8 @@ DroneAid was created by Pedro Cruz in August 2018 and released as a *Code and Re
 * [License](#license)
 
 ## The DroneAid origin story
+Pedro Cruz explains his inspiration for DroneAid, based on his experience in Puerto Rico after Hurricane Maria. He flew his drone around his neighborhood and saw handwritten messages indicating what people need and realized he could standardize a solution to provide a response.
+
 [![DroneAid](https://img.youtube.com/vi/9fRcis-5Zuc/0.jpg)](https://www.youtube.com/watch?v=9fRcis-5Zuc)
 
 ## DroneAid Symbol Language
