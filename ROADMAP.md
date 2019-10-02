@@ -22,3 +22,5 @@ Longer term goals are:
 * Produce a basic signaling kit with "SOS" on one side and "OK" on the other.
 * Create a Twitter bot that will look for tweets with a hashtag (i.e. #DroneAidSOS) for social media reporting.
 * Create a custom drone that will have DroneAid embedded inside, which will not require a computer or mobile app.
+
+<img src="img/map-sample.png" alt="Mapping needs">
