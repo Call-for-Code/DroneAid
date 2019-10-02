@@ -15,7 +15,7 @@ class TelloSDK {
     this.udpClient.bind(TELLO_COMMAND_PORT)
     this.activeMessages = 0
 
-    // Close udp socket and make sure we're not streaming or flying.
+    // Close UDP socket and make sure we're not streaming or flying.
     const exitHandler = async options => {
       if (options.cleanup) {
         await this.sendCommand('command')
@@ -41,15 +41,15 @@ class TelloSDK {
   }
 
   // Tello only accepts one command at a time. We ~should~ block until we get a
-  // responce, but this could be dangerous. Instead, let's send all messages
-  // all messages normally get a responce of "OK" asside from battery. So I
+  // response, but this could be dangerous. Instead, let's send all messages
+  // all messages normally get a response of "OK" aside from battery. So I
   // think it's fine if the messages get a little jumbled.
   async sendCommand (command) {
     return new Promise(resolve => {
       console.log(`Sending command: ${command}`)
       if (this.activeMessages > 0) {
         console.warn(
-          `WARNING: ${this.activeMessages} messages have been sent with no responce!`
+          `WARNING: ${this.activeMessages} messages have been sent with no response!`
         )
       }
 
