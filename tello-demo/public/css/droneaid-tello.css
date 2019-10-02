@@ -1,0 +1,221 @@
+.max-subheader .max-field {
+  display: flex;
+  flex-flow: column;
+}
+.max-subheader .max-field + .max-field {
+  margin-left: 5rem;
+}
+.max-subheader .max-field.spacer-field {
+  flex-grow: 1;
+}
+
+.max-main-content > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+.right-side {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin-top: 2rem;
+  max-width: 100%;
+}
+#symbol-count ul > li::before {
+  content: initial;
+}
+#symbol-count li {
+  font-size: 1.25rem;
+  margin-bottom: 2px;
+  padding: 0.75rem;
+  width: 12rem;
+}
+#symbol-count li > span {
+  display: inline-block;
+  position: absolute;
+  right: 0.75rem;
+}
+#symbol-count li:nth-child(n + 1) {
+  background-color: rgba(197, 148, 246, 0.15);
+}
+#symbol-count li:nth-child(n + 2) {
+  background-color: rgba(127, 45, 245, 0.15);
+}
+#symbol-count li:nth-child(n + 3) {
+  background-color: rgba(253, 236, 81, 0.15);
+}
+#symbol-count li:nth-child(n + 4) {
+  background-color: rgba(208, 62, 32, 0.15);
+}
+#symbol-count li:nth-child(n + 5) {
+  background-color: rgba(93, 202, 61, 0.15);
+}
+#symbol-count li:nth-child(n + 6) {
+  background-color: rgba(91, 200, 180, 0.15);
+}
+#symbol-count li:nth-child(n + 7) {
+  background-color: rgba(238, 116, 47, 0.15);
+}
+#symbol-count li:nth-child(n + 8) {
+  background-color: rgba(84, 143, 216, 0.15);
+}
+
+#not-connected {
+  font-weight: 600;
+  color: red;
+  font-size: 1.05rem;
+}
+#battery {
+  display: none;
+  position: relative;
+  width: 80px;
+  height: 30px;
+  border: 2px solid var(--text-primary);
+  border-radius: 4px;
+}
+#battery > div:first-child {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+}
+#battery > div:last-child {
+  background: var(--text-primary);
+  position: absolute;
+  top: 7px;
+  left: calc(100% + 4px);
+  bottom: 7px;
+  width: 2px;
+  border-radius: 2px;
+}
+#battery-level {
+  background: #53d769;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 800px) {
+  .left-side {
+    flex: 1;
+  }
+
+  .right-side {
+    flex: 2;
+    margin-top: 3.125rem;
+    margin-left: 2rem;
+  }
+}
+
+.left-side .max-toolbar {
+  background-color: #f3f3f3;
+  display: none;
+  margin: 0;
+  width: 100%;
+}
+.ready .left-side .max-toolbar {
+  display: flex;
+}
+.left-side .max-toolbar-menu-icon,
+.left-side button.max-toolbar-menu {
+  width: initial;
+  height: initial;
+}
+.left-side .max-toolbar-menu:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #f3f3f3 !important;
+}
+
+.max-input-container {
+  display: inline-block;
+  padding: 1rem 0 0 0;
+  position: relative;
+  min-width: 650px;
+  width: 100%;
+}
+.max-input-container > canvas {
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.max-input-container > canvas#prediction-canvas {
+  position: absolute;
+}
+
+.stream-button {
+  display: inline-flex;
+  max-width: 10rem;
+}
+
+.right-side .max-loading,
+body.busy #symbol-count {
+  display: none;
+}
+.right-side pre {
+  padding: 1rem;
+  background-color: #f3f3f3;
+  overflow: auto;
+}
+.right-side span.extract {
+  background-color: #f3f3f3;
+  display: inline-block;
+  margin: 0 1rem 1rem 0;
+  padding: 0.5rem;
+  vertical-align: top;
+  max-width: 50%;
+  max-height: 50%;
+}
+.right-side span.extract label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+body.busy .right-side .max-loading {
+  display: inline-block;
+}
+body:not(.busy) #symbol-count {
+  display: block;
+  width: 100%;
+}
+
+.max-log {
+  margin-bottom: 0.5rem;
+}
+.max-log > span {
+  display: block;
+  line-height: 1.1rem;
+}
+.max-log > span.max-error {
+  color: red;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.max-toolbar .max-loading svg circle {
+  stroke-width: 2;
+  animation-duration: 5000ms;
+  animation-timing-function: linear;
+}
+
+/* .prediction-toggle-fieldset {
+  visibility: hidden;
+}
+
+.max-threshold-fieldset {
+  visibility: hidden;
+}
+
+.stream-button {
+  visibility: hidden;
+} */

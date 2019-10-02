@@ -1,0 +1,1420 @@
+{
+    "lens_id": "",
+    "document_id": "sjJ1n5nIaxht0fckrXIk",
+    "original_document_id": "qv_BJdEL5TtiaHuboBPf",
+    "version": "16",
+    "lastChanged": "1569880884115",
+    "preview": "\/Users\/pedrocruz\/DroneAid\/ImageGen\/droneaid-image-training\/icon.png",
+    "videoPreview": "",
+    "videoPreviewUpdateTime": "",
+    "isReadOnly": "false",
+    "isAutoSaved": "false",
+    "studioVersion": {
+        "createdWith": {
+            "type": "Public",
+            "major": "2",
+            "minor": "1",
+            "patch": "0",
+            "build": "0"
+        },
+        "lastSavedWith": {
+            "type": "Public",
+            "major": "2",
+            "minor": "1",
+            "patch": "0",
+            "build": "0"
+        }
+    },
+    "view": {
+        "ResourceUiComponent": {
+            "collapsedList": [
+                [
+                    [
+                        "DroneAid Icons"
+                    ],
+                    [
+                        "DroneAid Icons",
+                        "icon-children"
+                    ],
+                    [
+                        "DroneAid Icons",
+                        "icon-elderly"
+                    ],
+                    [
+                        "DroneAid Icons",
+                        "icon-firstaid"
+                    ],
+                    [
+                        "DroneAid Icons",
+                        "icon-food"
+                    ],
+                    [
+                        "DroneAid Icons",
+                        "icon-ok"
+                    ],
+                    [
+                        "DroneAid Icons",
+                        "icon-shelter"
+                    ],
+                    [
+                        "DroneAid Icons",
+                        "icon-sos"
+                    ],
+                    [
+                        "DroneAid Icons",
+                        "icon-water"
+                    ],
+                    [
+                        "Materials"
+                    ],
+                    [
+                        "Meshes"
+                    ],
+                    [
+                        "Scripts"
+                    ],
+                    [
+                        "Textures"
+                    ]
+                ]
+            ]
+        },
+        "SceneTreeUiComponent": {
+            "collapsedList": [
+                [
+                    "1508869195559043:43763",
+                    "1520375901752793:958230",
+                    "1568570061368600:73062",
+                    "1568570297061385:124349",
+                    "1568570305271595:132875",
+                    "1568570309095608:141819",
+                    "1568570317349999:151680",
+                    "1568570325355218:161542"
+                ]
+            ]
+        },
+        "MetaInfoUIComponent": {
+            "icon_hash": "f73cc7c65db196f1c96fa85f2edca9b5",
+            "icon_path": "icon.png",
+            "hints": [
+                ""
+            ],
+            "lens": "Animated Object",
+            "camera": "1",
+            "lens_descriptors": ""
+        },
+        "PreviewUiComponent": {
+            "is_back_camera": "true",
+            "show_snap_ui": "true",
+            "show_sponsored_ui": "false",
+            "preview_images_project_config": {
+                "front_preview_id": "bundle:PreviewPresets\/Images\/Person 1.jpg",
+                "front_preview_is_favorite": "false",
+                "back_preview_id": "bundle:PreviewPresets\/Images\/Patio.jpg",
+                "back_preview_is_favorite": "false"
+            },
+            "preview_videos_project_config": {
+                "front_preview_id": "bundle:PreviewPresets\/Videos\/Idle Person 1.webm",
+                "front_preview_is_favorite": "false",
+                "back_preview_id": "bundle:PreviewPresets\/Videos\/Beach.webm",
+                "back_preview_is_favorite": "false"
+            }
+        },
+        "InspectorUiComponent": {
+            "collapsedList": [
+                ""
+            ]
+        }
+    },
+    "model": {
+        "IResourceManager": {
+            "list": [
+                {
+                    "resId": "1",
+                    "uid": "1:1",
+                    "name": "Camera Output",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "0"
+                },
+                {
+                    "resId": "2",
+                    "uid": "2:2",
+                    "name": "Camera Input",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "0"
+                },
+                {
+                    "resId": "5",
+                    "uid": "1498868100994851:367",
+                    "name": "\/Resources\/Resource5.mesh",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "5"
+                },
+                {
+                    "resId": "7",
+                    "uid": "1498868158392542:504",
+                    "name": "\/Resources\/Resource7.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "9",
+                    "uid": "1498868172316494:515",
+                    "name": "\/Resources\/Resource9.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "10",
+                    "uid": "1498868172318940:524",
+                    "name": "\/Resources\/Resource10.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "11",
+                    "uid": "1498868172319414:533",
+                    "name": "\/Resources\/Resource11",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "13",
+                    "uid": "1498868868171510:1508",
+                    "name": "\/Resources\/Resource13.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "14",
+                    "uid": "1499276508720146:1345",
+                    "name": "\/Resources\/Resource14.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "156",
+                    "uid": "1508880320211090:76268",
+                    "name": "\/Resources\/Resource156.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "157",
+                    "uid": "1508880320229720:76277",
+                    "name": "\/Resources\/Resource157.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "160",
+                    "uid": "1508880728097855:76417",
+                    "name": "\/Resources\/Resource160.mesh",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "5"
+                },
+                {
+                    "resId": "167",
+                    "uid": "1511398066502947:21445",
+                    "name": "\/Resources\/Resource167",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "168",
+                    "uid": "1511398066504473:21457",
+                    "name": "\/Resources\/Resource168.mesh",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "169",
+                    "uid": "1511399587522424:24419",
+                    "name": "\/Resources\/Resource169",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "171",
+                    "uid": "1568569872399033:36034",
+                    "name": "Files\/File24.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "172",
+                    "uid": "1568569872455826:36046",
+                    "name": "Files\/File26.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "173",
+                    "uid": "1568569872502691:37957",
+                    "name": "Files\/File28.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "174",
+                    "uid": "1568569872553359:37969",
+                    "name": "Files\/File30.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "175",
+                    "uid": "1568569872619066:37981",
+                    "name": "Files\/File32.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "176",
+                    "uid": "1568569872684623:37993",
+                    "name": "Files\/File34.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "177",
+                    "uid": "1568569872751292:38008",
+                    "name": "Files\/File36.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "178",
+                    "uid": "1568569872807604:38020",
+                    "name": "Files\/File38.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                }
+            ],
+            "MaterialUpdateManager": {
+                "unrecognizedMaterials": ""
+            }
+        },
+        "InspectorComponent": {
+            "Component": {
+                "FaceStretchVisual": {
+                    "uidsToFeatureNamesWithIntensity": ""
+                },
+                "ScreenTransform": {
+                    "uidData": "",
+                    "generalData": ""
+                }
+            }
+        },
+        "RenderOrderComponent": {
+            "autoRenderOrder": {
+                "0": "1498868100994780:363",
+                "1": "1507675612124687:16502",
+                "2": "1511398066499868:21439",
+                "3": "1519939391233747:433312",
+                "4": "1520375901752793:958230",
+                "5": "1568569880156731:40070",
+                "6": "1568569974677910:45606",
+                "7": "1568569975168017:47887",
+                "8": "1568569976348176:52241",
+                "9": "1568569976936998:54949",
+                "10": "1568569979043413:59047",
+                "11": "1568569980564858:63606",
+                "12": "1568569981811842:68233",
+                "13": "1568570061368600:73062",
+                "14": "1569880798607373:6559",
+                "15": "1569880798608048:6566",
+                "16": "1569880798693618:6738",
+                "17": "1569880798720745:6910",
+                "18": "1569880798754989:7082",
+                "19": "1569880798788756:7254",
+                "20": "1569880798820290:7426",
+                "21": "1569880798854024:7598",
+                "22": "1569880798886996:7770",
+                "23": "1569880809006722:9957",
+                "24": "1569880809007578:9964",
+                "25": "1569880809048456:10136",
+                "26": "1569880809083945:10308",
+                "27": "1569880809119371:10480",
+                "28": "1569880809156123:10652",
+                "29": "1569880809190024:10824",
+                "30": "1569880809223654:10996",
+                "31": "1569880809260095:11168",
+                "32": "1569880816512020:13819",
+                "33": "1569880816513637:13826",
+                "34": "1569880816551685:13998",
+                "35": "1569880816586461:14170",
+                "36": "1569880816623044:14342",
+                "37": "1569880816657621:14514",
+                "38": "1569880816692878:14686",
+                "39": "1569880816728594:14858",
+                "40": "1569880816764088:15030"
+            }
+        },
+        "LayerComponent": {
+            "nextLayerId": "3",
+            "showOrthographicLayer": "false",
+            "layersInfo": [
+                {
+                    "layerId": "0",
+                    "layerName": "Default Layer",
+                    "layerMask": "1",
+                    "colorCode": "20"
+                },
+                {
+                    "layerId": "1",
+                    "layerName": "Orthographic Layer",
+                    "layerMask": "1048576",
+                    "colorCode": "21"
+                }
+            ]
+        },
+        "IFileManager": {
+            "pathes": [
+                {
+                    "k": "1",
+                    "v": "Files\/File1.mesh"
+                },
+                {
+                    "k": "2",
+                    "v": "Files\/File2.js"
+                },
+                {
+                    "k": "3",
+                    "v": "Files\/File3.png"
+                },
+                {
+                    "k": "4",
+                    "v": "Files\/File4.png"
+                },
+                {
+                    "k": "5",
+                    "v": "Files\/File5"
+                },
+                {
+                    "k": "6",
+                    "v": "Files\/File6.js"
+                },
+                {
+                    "k": "7",
+                    "v": "Files\/File7.js"
+                },
+                {
+                    "k": "13",
+                    "v": "Files\/File13.png"
+                },
+                {
+                    "k": "14",
+                    "v": "Files\/File14.png"
+                },
+                {
+                    "k": "15",
+                    "v": "Files\/File15.mesh"
+                },
+                {
+                    "k": "16",
+                    "v": "Files\/File16"
+                },
+                {
+                    "k": "17",
+                    "v": "Files\/File17.mesh"
+                },
+                {
+                    "k": "18",
+                    "v": "Files\/File18"
+                },
+                {
+                    "k": "20",
+                    "v": "Files\/File20.lsmat"
+                },
+                {
+                    "k": "21",
+                    "v": "Files\/File21.lsmat"
+                },
+                {
+                    "k": "22",
+                    "v": "Files\/File22.lsmat"
+                },
+                {
+                    "k": "24",
+                    "v": "Files\/File24.png"
+                },
+                {
+                    "k": "25",
+                    "v": "Files\/File25.png"
+                },
+                {
+                    "k": "26",
+                    "v": "Files\/File26.png"
+                },
+                {
+                    "k": "27",
+                    "v": "Files\/File27.png"
+                },
+                {
+                    "k": "28",
+                    "v": "Files\/File28.png"
+                },
+                {
+                    "k": "29",
+                    "v": "Files\/File29.png"
+                },
+                {
+                    "k": "30",
+                    "v": "Files\/File30.png"
+                },
+                {
+                    "k": "31",
+                    "v": "Files\/File31.png"
+                },
+                {
+                    "k": "32",
+                    "v": "Files\/File32.png"
+                },
+                {
+                    "k": "33",
+                    "v": "Files\/File33.png"
+                },
+                {
+                    "k": "34",
+                    "v": "Files\/File34.png"
+                },
+                {
+                    "k": "35",
+                    "v": "Files\/File35.png"
+                },
+                {
+                    "k": "36",
+                    "v": "Files\/File36.png"
+                },
+                {
+                    "k": "37",
+                    "v": "Files\/File37.png"
+                },
+                {
+                    "k": "38",
+                    "v": "Files\/File38.png"
+                },
+                {
+                    "k": "39",
+                    "v": "Files\/File39.png"
+                }
+            ]
+        },
+        "WorldComponent": {
+            "sceneFile": "scene.scn",
+            "sceneType": "binaryScene"
+        }
+    },
+    "controller": {
+        "IResourceController": {
+            "public": {
+                "pathes": [
+                    {
+                        "k": "1",
+                        "v": "Scripts"
+                    },
+                    {
+                        "k": "2",
+                        "v": "Scripts\/GroundGrid.js"
+                    },
+                    {
+                        "k": "3",
+                        "v": "Scripts\/WorldObjectController.js"
+                    },
+                    {
+                        "k": "4",
+                        "v": "Scripts\/IdleAnim.js"
+                    },
+                    {
+                        "k": "5",
+                        "v": "Textures"
+                    },
+                    {
+                        "k": "6",
+                        "v": "Textures\/ground_grid.png"
+                    },
+                    {
+                        "k": "7",
+                        "v": "Textures\/ground_grid_mask.png"
+                    },
+                    {
+                        "k": "8",
+                        "v": "Textures\/marvista_diff.png"
+                    },
+                    {
+                        "k": "9",
+                        "v": "Textures\/marvista_spec.png"
+                    },
+                    {
+                        "k": "10",
+                        "v": "Meshes"
+                    },
+                    {
+                        "k": "11",
+                        "v": "Meshes\/ground_grid_mesh.mesh"
+                    },
+                    {
+                        "k": "12",
+                        "v": "Meshes\/touch_collision_cube.mesh"
+                    },
+                    {
+                        "k": "13",
+                        "v": "Meshes\/Plane.mesh"
+                    },
+                    {
+                        "k": "14",
+                        "v": "Materials"
+                    },
+                    {
+                        "k": "15",
+                        "v": "Materials\/ground_grid.lsmat"
+                    },
+                    {
+                        "k": "16",
+                        "v": "Materials\/matte_shadow.lsmat"
+                    },
+                    {
+                        "k": "17",
+                        "v": "Materials\/touch_collision.lsmat"
+                    },
+                    {
+                        "k": "109",
+                        "v": "DroneAid Icons"
+                    },
+                    {
+                        "k": "110",
+                        "v": "DroneAid Icons\/icon-elderly.png"
+                    },
+                    {
+                        "k": "111",
+                        "v": "DroneAid Icons\/icon-shelter.png"
+                    },
+                    {
+                        "k": "112",
+                        "v": "DroneAid Icons\/icon-food.png"
+                    },
+                    {
+                        "k": "113",
+                        "v": "DroneAid Icons\/icon-children.png"
+                    },
+                    {
+                        "k": "114",
+                        "v": "DroneAid Icons\/icon-firstaid.png"
+                    },
+                    {
+                        "k": "115",
+                        "v": "DroneAid Icons\/icon-sos.png"
+                    },
+                    {
+                        "k": "116",
+                        "v": "DroneAid Icons\/icon-ok.png"
+                    },
+                    {
+                        "k": "117",
+                        "v": "DroneAid Icons\/icon-water.png"
+                    }
+                ],
+                "hashes": [
+                    {
+                        "k": "2",
+                        "v": "09a5c3ee815c9134ffc2d25e7355d78a"
+                    },
+                    {
+                        "k": "3",
+                        "v": "fb66ad4478ded59ebb2b4df94ba44105"
+                    },
+                    {
+                        "k": "4",
+                        "v": "ba19cc2ce2bdd604059da205db31d2e6"
+                    },
+                    {
+                        "k": "6",
+                        "v": "26b5600591ba238fbcf5109847db6d02"
+                    },
+                    {
+                        "k": "7",
+                        "v": "9107aa91a8d18484c51680d3a7a03d5a"
+                    },
+                    {
+                        "k": "8",
+                        "v": "8cf9333da31b72029741a85c70c2d30f"
+                    },
+                    {
+                        "k": "9",
+                        "v": "6a3257a640777da36558238af7b3ae88"
+                    },
+                    {
+                        "k": "11",
+                        "v": "ca6a55793555b88df4aca4a7329624e5"
+                    },
+                    {
+                        "k": "12",
+                        "v": "e9167dc2c6b4be6840fd00390a21b633"
+                    },
+                    {
+                        "k": "13",
+                        "v": "4649d59d58657e786eebaad58a052d2a"
+                    },
+                    {
+                        "k": "15",
+                        "v": "9f92368cc6b49e27287566d8e5457fa0"
+                    },
+                    {
+                        "k": "16",
+                        "v": "eefdd9dadae343226af33a0495bc5c92"
+                    },
+                    {
+                        "k": "17",
+                        "v": "981f2ebdd9a90787c792d322908d49ec"
+                    },
+                    {
+                        "k": "20",
+                        "v": "cfb995f6f6bdb951ea945c298701ad69"
+                    },
+                    {
+                        "k": "21",
+                        "v": "83952503d7715d6e7a4a382918761159"
+                    },
+                    {
+                        "k": "22",
+                        "v": "be41801402376ae465615fd09cf21b74"
+                    },
+                    {
+                        "k": "24",
+                        "v": "b99a75b96a011694997259c3aeaabf64"
+                    },
+                    {
+                        "k": "26",
+                        "v": "6955ae436ec6a2c1fa59d00f761681f4"
+                    },
+                    {
+                        "k": "27",
+                        "v": "0377342409f8ec90142150bdb61f7bc7"
+                    },
+                    {
+                        "k": "110",
+                        "v": "628deae03bb77098f13af376b61910dc"
+                    },
+                    {
+                        "k": "111",
+                        "v": "dfde7b24ae9be97fa2631584d1ab0367"
+                    },
+                    {
+                        "k": "112",
+                        "v": "2f0462e2e05aab6536340b86a4806658"
+                    },
+                    {
+                        "k": "113",
+                        "v": "889908d85092149e8fc79bdbe752a5b8"
+                    },
+                    {
+                        "k": "114",
+                        "v": "4dd269d26b7766b6df68c61a5377e2b4"
+                    },
+                    {
+                        "k": "115",
+                        "v": "0b7b06ad7ea70c32c757e614636b96cc"
+                    },
+                    {
+                        "k": "116",
+                        "v": "692181b6542a40d62c86c3e337a61634"
+                    },
+                    {
+                        "k": "117",
+                        "v": "127705abe823b1a1ff59a00f021a96af"
+                    }
+                ],
+                "publicState": {
+                    "tree": {
+                        "isFolder": "true",
+                        "lastModified": "2019-09-30T14:54:58",
+                        "name": "Public",
+                        "hash": "7f21f7ee5b962c80df641f72c7ef9a37",
+                        "children": [
+                            {
+                                "isFolder": "true",
+                                "lastModified": "2019-09-30T14:54:58",
+                                "name": "Textures",
+                                "hash": "a9e03abf98cca6a0da492465cc0480bd",
+                                "children": [
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-26T14:11:35",
+                                        "name": "marvista_diff.png",
+                                        "hash": "8cf9333da31b72029741a85c70c2d30f",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-26T14:11:35",
+                                        "name": "marvista_spec.png",
+                                        "hash": "6a3257a640777da36558238af7b3ae88",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-26T14:11:35",
+                                        "name": "ground_grid.png",
+                                        "hash": "26b5600591ba238fbcf5109847db6d02",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-26T14:11:35",
+                                        "name": "ground_grid_mask.png",
+                                        "hash": "9107aa91a8d18484c51680d3a7a03d5a",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-26T14:11:35",
+                                        "name": "folder.lock",
+                                        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                        "children": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "isFolder": "true",
+                                "lastModified": "2019-09-30T14:54:58",
+                                "name": "Materials",
+                                "hash": "b224e270970aafea98cbcc05766303f5",
+                                "children": [
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-26T14:11:35",
+                                        "name": "ground_grid.lsmat",
+                                        "hash": "9f92368cc6b49e27287566d8e5457fa0",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-26T14:11:35",
+                                        "name": "touch_collision.lsmat",
+                                        "hash": "981f2ebdd9a90787c792d322908d49ec",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-26T14:11:35",
+                                        "name": "matte_shadow.lsmat",
+                                        "hash": "eefdd9dadae343226af33a0495bc5c92",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-26T14:11:35",
+                                        "name": "folder.lock",
+                                        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                        "children": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "isFolder": "true",
+                                "lastModified": "2019-09-30T14:54:58",
+                                "name": "Meshes",
+                                "hash": "e2d4e51e26dd1132bc02b8e47cd840d9",
+                                "children": [
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-26T14:11:35",
+                                        "name": "touch_collision_cube.mesh",
+                                        "hash": "e9167dc2c6b4be6840fd00390a21b633",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-26T14:11:35",
+                                        "name": "ground_grid_mesh.mesh",
+                                        "hash": "ca6a55793555b88df4aca4a7329624e5",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-26T14:11:35",
+                                        "name": "Plane.mesh",
+                                        "hash": "4649d59d58657e786eebaad58a052d2a",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-26T14:11:35",
+                                        "name": "folder.lock",
+                                        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                        "children": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "isFolder": "true",
+                                "lastModified": "2019-09-30T14:54:58",
+                                "name": "Scripts",
+                                "hash": "6ee6321c26634a023e9c8fa8c5db18ae",
+                                "children": [
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-26T14:11:35",
+                                        "name": "WorldObjectController.js",
+                                        "hash": "fb66ad4478ded59ebb2b4df94ba44105",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-26T14:11:35",
+                                        "name": "IdleAnim.js",
+                                        "hash": "ba19cc2ce2bdd604059da205db31d2e6",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-26T14:11:35",
+                                        "name": "GroundGrid.js",
+                                        "hash": "09a5c3ee815c9134ffc2d25e7355d78a",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-26T14:11:35",
+                                        "name": "folder.lock",
+                                        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                        "children": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "isFolder": "true",
+                                "lastModified": "2019-09-30T14:54:58",
+                                "name": "DroneAid Icons",
+                                "hash": "40ec4dc1d6782cfbfee4c8db9ca52233",
+                                "children": [
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-21T14:42:24",
+                                        "name": "icon-firstaid.png",
+                                        "hash": "4dd269d26b7766b6df68c61a5377e2b4",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-21T14:42:24",
+                                        "name": "icon-sos.png",
+                                        "hash": "0b7b06ad7ea70c32c757e614636b96cc",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-21T14:42:24",
+                                        "name": "icon-shelter.png",
+                                        "hash": "dfde7b24ae9be97fa2631584d1ab0367",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-21T14:42:24",
+                                        "name": "icon-ok.png",
+                                        "hash": "692181b6542a40d62c86c3e337a61634",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-21T14:42:24",
+                                        "name": "icon-water.png",
+                                        "hash": "127705abe823b1a1ff59a00f021a96af",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-21T14:42:24",
+                                        "name": "icon-children.png",
+                                        "hash": "889908d85092149e8fc79bdbe752a5b8",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-21T14:42:24",
+                                        "name": "icon-food.png",
+                                        "hash": "2f0462e2e05aab6536340b86a4806658",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-08-21T14:42:24",
+                                        "name": "icon-elderly.png",
+                                        "hash": "628deae03bb77098f13af376b61910dc",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2019-09-15T10:50:50",
+                                        "name": "folder.lock",
+                                        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                        "children": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "isFolder": "false",
+                                "lastModified": "2019-08-26T14:11:35",
+                                "name": "folder.lock",
+                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                "children": ""
+                            }
+                        ]
+                    }
+                },
+                "complexResources": ""
+            },
+            "tree": {
+                "name": "",
+                "type": "0",
+                "subtype": "-1",
+                "resourceId": "-1",
+                "dependency": "0",
+                "uid": "-1:-1",
+                "fileId": "18446744073709551615",
+                "originalId": "18446744073709551615",
+                "publicId": "18446744073709551615",
+                "source": "",
+                "additional": "",
+                "resources": [
+                    {
+                        "name": "Scripts",
+                        "type": "0",
+                        "subtype": "-1",
+                        "resourceId": "-1",
+                        "dependency": "0",
+                        "uid": "-1:-1",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "1",
+                        "source": "",
+                        "additional": "",
+                        "resources": [
+                            {
+                                "name": "GroundGrid",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "7",
+                                "dependency": "0",
+                                "uid": "1498868158392542:504",
+                                "fileId": "2",
+                                "originalId": "18446744073709551615",
+                                "publicId": "2",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "WorldObjectController",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "13",
+                                "dependency": "0",
+                                "uid": "1498868868171510:1508",
+                                "fileId": "6",
+                                "originalId": "18446744073709551615",
+                                "publicId": "3",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "IdleAnim",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "14",
+                                "dependency": "0",
+                                "uid": "1499276508720146:1345",
+                                "fileId": "7",
+                                "originalId": "18446744073709551615",
+                                "publicId": "4",
+                                "source": "",
+                                "additional": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Textures",
+                        "type": "0",
+                        "subtype": "-1",
+                        "resourceId": "-1",
+                        "dependency": "0",
+                        "uid": "-1:-1",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "5",
+                        "source": "",
+                        "additional": "",
+                        "resources": [
+                            {
+                                "name": "Render Target",
+                                "type": "1",
+                                "subtype": "1",
+                                "resourceId": "1",
+                                "dependency": "0",
+                                "uid": "1:1",
+                                "fileId": "18446744073709551615",
+                                "originalId": "18446744073709551615",
+                                "publicId": "18446744073709551615",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "Device Camera Texture",
+                                "type": "1",
+                                "subtype": "3",
+                                "resourceId": "2",
+                                "dependency": "0",
+                                "uid": "2:2",
+                                "fileId": "18446744073709551615",
+                                "originalId": "18446744073709551615",
+                                "publicId": "18446744073709551615",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "ground_grid",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "9",
+                                "dependency": "0",
+                                "uid": "1498868172316494:515",
+                                "fileId": "3",
+                                "originalId": "18446744073709551615",
+                                "publicId": "6",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "ground_grid_mask",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "10",
+                                "dependency": "0",
+                                "uid": "1498868172318940:524",
+                                "fileId": "4",
+                                "originalId": "18446744073709551615",
+                                "publicId": "7",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "marvista_diff",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "156",
+                                "dependency": "0",
+                                "uid": "1508880320211090:76268",
+                                "fileId": "13",
+                                "originalId": "18446744073709551615",
+                                "publicId": "8",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "marvista_spec",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "157",
+                                "dependency": "0",
+                                "uid": "1508880320229720:76277",
+                                "fileId": "14",
+                                "originalId": "18446744073709551615",
+                                "publicId": "9",
+                                "source": "",
+                                "additional": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Meshes",
+                        "type": "0",
+                        "subtype": "-1",
+                        "resourceId": "-1",
+                        "dependency": "0",
+                        "uid": "-1:-1",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "10",
+                        "source": "",
+                        "additional": "",
+                        "resources": [
+                            {
+                                "name": "ground_grid_mesh",
+                                "type": "3",
+                                "subtype": "0",
+                                "resourceId": "5",
+                                "dependency": "0",
+                                "uid": "1498868100994851:367",
+                                "fileId": "1",
+                                "originalId": "18446744073709551615",
+                                "publicId": "11",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "touch_collision_cube",
+                                "type": "3",
+                                "subtype": "0",
+                                "resourceId": "160",
+                                "dependency": "0",
+                                "uid": "1508880728097855:76417",
+                                "fileId": "15",
+                                "originalId": "18446744073709551615",
+                                "publicId": "12",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "Plane",
+                                "type": "3",
+                                "subtype": "0",
+                                "resourceId": "168",
+                                "dependency": "0",
+                                "uid": "1511398066504473:21457",
+                                "fileId": "17",
+                                "originalId": "18446744073709551615",
+                                "publicId": "13",
+                                "source": "",
+                                "additional": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Materials",
+                        "type": "0",
+                        "subtype": "-1",
+                        "resourceId": "-1",
+                        "dependency": "0",
+                        "uid": "-1:-1",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "14",
+                        "source": "",
+                        "additional": "",
+                        "resources": [
+                            {
+                                "name": "ground_grid",
+                                "type": "2",
+                                "subtype": "0",
+                                "resourceId": "11",
+                                "dependency": "0",
+                                "uid": "1498868172319414:533",
+                                "fileId": "5",
+                                "originalId": "20",
+                                "publicId": "15",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "matte_shadow",
+                                "type": "2",
+                                "subtype": "0",
+                                "resourceId": "167",
+                                "dependency": "0",
+                                "uid": "1511398066502947:21445",
+                                "fileId": "16",
+                                "originalId": "21",
+                                "publicId": "16",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "touch_collision",
+                                "type": "2",
+                                "subtype": "0",
+                                "resourceId": "169",
+                                "dependency": "0",
+                                "uid": "1511399587522424:24419",
+                                "fileId": "18",
+                                "originalId": "22",
+                                "publicId": "17",
+                                "source": "",
+                                "additional": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DroneAid Icons",
+                        "type": "0",
+                        "subtype": "-1",
+                        "resourceId": "-1",
+                        "dependency": "0",
+                        "uid": "-1:-1",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "109",
+                        "source": "",
+                        "additional": "",
+                        "resources": [
+                            {
+                                "name": "icon-elderly",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "171",
+                                "dependency": "0",
+                                "uid": "1568569872399033:36034",
+                                "fileId": "24",
+                                "originalId": "25",
+                                "publicId": "110",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "icon-shelter",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "172",
+                                "dependency": "0",
+                                "uid": "1568569872455826:36046",
+                                "fileId": "26",
+                                "originalId": "27",
+                                "publicId": "111",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "icon-food",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "173",
+                                "dependency": "0",
+                                "uid": "1568569872502691:37957",
+                                "fileId": "28",
+                                "originalId": "29",
+                                "publicId": "112",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "icon-children",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "174",
+                                "dependency": "0",
+                                "uid": "1568569872553359:37969",
+                                "fileId": "30",
+                                "originalId": "31",
+                                "publicId": "113",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "icon-firstaid",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "175",
+                                "dependency": "0",
+                                "uid": "1568569872619066:37981",
+                                "fileId": "32",
+                                "originalId": "33",
+                                "publicId": "114",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "icon-sos",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "176",
+                                "dependency": "0",
+                                "uid": "1568569872684623:37993",
+                                "fileId": "34",
+                                "originalId": "35",
+                                "publicId": "115",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "icon-ok",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "177",
+                                "dependency": "0",
+                                "uid": "1568569872751292:38008",
+                                "fileId": "36",
+                                "originalId": "37",
+                                "publicId": "116",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "icon-water",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "178",
+                                "dependency": "0",
+                                "uid": "1568569872807604:38020",
+                                "fileId": "38",
+                                "originalId": "39",
+                                "publicId": "117",
+                                "source": "",
+                                "additional": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "InspectorController": {
+            "selection": {
+                "objects": [
+                    "1568570061368600:73062",
+                    "1569880798607373:6559",
+                    "1569880809006722:9957",
+                    "1569880816512020:13819"
+                ]
+            }
+        },
+        "EffectsController": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "10": "",
+            "11": "",
+            "12": "",
+            "13": "",
+            "14": "",
+            "15": "",
+            "16": "",
+            "17": "",
+            "18": "",
+            "19": "",
+            "20": ""
+        },
+        "ObjectPrefabController": {
+            "state": {
+                "objectToInfo": ""
+            },
+            "importInfo": ""
+        }
+    }
+}

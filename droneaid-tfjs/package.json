@@ -1,0 +1,54 @@
+{
+  "name": "droneaid-tfjs",
+  "version": "0.0.1",
+  "description": "Detect calls for help on the ground placed by those in need.",
+  "main": "dist/droneaid-tfjs.cjs.js",
+  "module": "dist/droneaid-tfjs.es.js",
+  "jsdelivr": "dist/droneaid-tfjs.min.js",
+  "unpkg": "dist/droneaid-tfjs.min.js",
+  "scripts": {
+    "clean": "rimraf dist && mkdirp dist",
+    "rollup": "rollup --config rollup.config.js",
+    "uglify": "uglifyjs dist/droneaid-tfjs.js -mc --source-map --output dist/droneaid-tfjs.min.js",
+    "copy": "ncp model dist/model",
+    "build": "npm run clean && npm run rollup && npm run uglify",
+    "test": "standard && npm run build"
+  },
+  "files": [
+    "dist",
+    "model"
+  ],
+  "license": "Apache-2.0",
+  "author": "",
+  "contributors": [
+    "Pedro Cruz (https://github.com/pedrocruzio)",
+    "va barbosa (https://github.com/vabarbosa)",
+    "Nick Bourdakos (https://github.com/bourdakos1)",
+    "John Walicki (https://github.com/johnwalicki)"
+  ],
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrocruzio/DroneAid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pedrocruzio/DroneAid/issues"
+  },
+  "homepage": "https://github.com/pedrocruzio/DroneAid",
+  "devDependencies": {
+    "canvas": "^2.1.0",
+    "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.17.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-replace": "^2.1.0",
+    "standard": "^12.0.1",
+    "uglify-es": "^3.3.9"
+  },
+  "standard": {
+    "ignore": [
+      "dist"
+    ]
+  }
+}

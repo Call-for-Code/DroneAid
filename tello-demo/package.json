@@ -1,0 +1,22 @@
+{
+  "name": "droneaid-tello-demo",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "standard",
+    "start": "node server.js"
+  },
+  "author": "",
+  "contributors": [
+    "Pedro Cruz (https://github.com/pedrocruzio)",
+    "va barbosa (https://github.com/vabarbosa)",
+    "Nick Bourdakos (https://github.com/bourdakos1)",
+    "John Walicki (https://github.com/johnwalicki)"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ws": "^7.1.2"
+  }
+}
