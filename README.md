@@ -1,6 +1,6 @@
 # DroneAid
 
-## Visually recognize standard icons to respond to needs after a disaster
+## Aerial scout for first responders
 
 <img src="img/droneaid-logo.png" height="100" alt="DroneAid logo"> 
 
