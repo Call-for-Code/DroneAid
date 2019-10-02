@@ -6,6 +6,12 @@
 
 DroneAid uses machine learning to detect calls for help on the ground placed by those in need. At the heart of DroneAid is a *Symbol Language* that is used to train a visual recognition model. That model analyzes video from a drone to detect and count specific images. A dashboard can be used to plot those locations on a map and initiate a response.
 
+DroneAid consists of several components:
+1. The DroneAid Symbol Language that represents need and quantities
+2. A mechanism for rendering the symbols in virtual reality to train a model
+3. The trained model that can be applied to drone livestream video
+4. A dashboard that renders the location of needs captured by a drone
+
 The current implementation can be extended beyond a particular drone to additional drones, airplanes, and satellites. The Symbol Language can be used to train additional visual recognition implementations.
 
 DroneAid was created by Pedro Cruz in August 2018 and released as a *Code and Response™ with The Linux Foundation* open source project in October 2019. DroneAid is currently being transferred to The Linux Foundation.
@@ -30,7 +36,7 @@ The DroneAid Symbol Language provides a way for those affected by natural disast
 
 Victims can use a pre-packaged symbol kit that has been manufactured and distributed to them, or recreate the symbols manually with whatever materials they have available.
 
-These symbols include those below, which represent a subset of the icons provided by [The United Nations Office for the Coordination of Humanitarian Affairs (OCHA)](https://www.unocha.org/story/ocha-launches-500-free-humanitarian-symbols).
+These symbols include those below, which represent a subset of the icons provided by [The United Nations Office for the Coordination of Humanitarian Affairs (OCHA)](https://www.unocha.org/story/ocha-launches-500-free-humanitarian-symbols). These can be complemented with numbers to quantify need, such as the number or people who need water.
 
 | Symbol | Meaning | Symbol | Meaning |
 |--------|--------- |--------|---------|
@@ -68,7 +74,7 @@ See [ROADMAP.md](ROADMAP.md)
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting DroneAid pull requests.
 
 ## Authors
 
