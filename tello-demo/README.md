@@ -40,7 +40,7 @@ This directory contains the instructions for viewing the streaming video from a 
    $ npm start
    ```  
 
-1. Open a browser and go to **http://localhost:3000/**.
+1. Open a browser and go to **http://127.0.0.1:3000/**.
 1. Connect computer to Tello drone's WiFi
 1. Click **Start stream**
 
