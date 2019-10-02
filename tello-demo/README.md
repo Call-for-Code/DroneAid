@@ -35,13 +35,13 @@ This directory contains the instructions for viewing the streaming video from a 
 
 ## Run
 
-1. Connect computer to Tello drone's wifi
 1. In a terminal window, start the server in the `tello-demo` directory
    ```
    $ npm start
    ```  
 
 1. Open a browser and go to **http://localhost:3000/**.
+1. Connect computer to Tello drone's WiFi
 1. Click **Start stream**
 
 You should now see a live feed from Tello drone in the browser window! If you click and enable the **Prediction** switch inference will run against the video feed with the DroneAid model (using TensorFlow.js) and the browser will display the predictions annotated onto the video.
