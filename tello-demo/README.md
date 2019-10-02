@@ -13,7 +13,7 @@ This directory contains the instructions for viewing the streaming video from a 
    ```  
 1. Clone this repository
    ```
-   $ git clone https://github.ibm.com/Code-and-Response/DroneAid.git
+   $ git clone https://github.com/Code-and-Response/DroneAid.git
    ```  
 1. Change to `droneaid-tfjs` directory
    ```
