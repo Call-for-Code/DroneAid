@@ -2,7 +2,7 @@
 
 DroneAid uses machine learning to detect calls for help on the ground placed by those in need. At the heart of DroneAid is a *Symbol Language* that is used to train a visual recognition model. That model analyzes video from a drone to detect and count specific images. A dashboard can be used to plot those locations on a map and initiate a response.
 
-## Aerial scout for first responders
+## An aerial scout for first responders
 
 DroneAid consists of several components:
 1. The DroneAid Symbol Language that represents need and quantities
@@ -12,7 +12,7 @@ DroneAid consists of several components:
 
 The current implementation can be extended beyond a particular drone to additional drones, airplanes, and satellites. The Symbol Language can be used to train additional visual recognition implementations.
 
-DroneAid was created by Pedro Cruz in August 2018 and released as a *Code and Response™ with The Linux Foundation* open source project in October 2019. DroneAid is currently being transferred to The Linux Foundation.
+The original version of DroneAid was created by Pedro Cruz in August 2018. A refactored version was released as a *Code and Response™ with The Linux Foundation* open source project in October 2019. DroneAid is currently being transferred to The Linux Foundation.
 
 * [The DroneAid origin story](#the-droneaid-origin-story)
 * [DroneAid Symbol Language](#droneaid-symbol-language)
