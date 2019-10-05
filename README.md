@@ -2,6 +2,8 @@
 
 DroneAid uses machine learning to detect calls for help on the ground placed by those in need. At the heart of DroneAid is a *Symbol Language* that is used to train a visual recognition model. That model analyzes video from a drone to detect and count specific images. A dashboard can be used to plot those locations on a map and initiate a response.
 
+[![License][https://img.shields.io/badge/License-Apache2-blue.svg]](https://www.apache.org/licenses/LICENSE-2.0) 
+
 ## An aerial scout for first responders
 
 DroneAid consists of several components:
@@ -13,6 +15,8 @@ DroneAid consists of several components:
 The current implementation can be extended beyond a particular drone to additional drones, airplanes, and satellites. The Symbol Language can be used to train additional visual recognition implementations.
 
 The original version of DroneAid was created by Pedro Cruz in August 2018. A refactored version was released as a *Code and Response™ with The Linux Foundation* open source project in October 2019. DroneAid is currently being transferred to The Linux Foundation.
+
+## Get started
 
 * [The DroneAid origin story](#the-droneaid-origin-story)
 * [DroneAid Symbol Language](#droneaid-symbol-language)
@@ -26,6 +30,7 @@ The original version of DroneAid was created by Pedro Cruz in August 2018. A ref
 * [License](#license)
 
 ## The DroneAid origin story
+
 Pedro Cruz explains his inspiration for DroneAid, based on his experience in Puerto Rico after Hurricane Maria. He flew his drone around his neighborhood and saw handwritten messages indicating what people need and realized he could standardize a solution to provide a response.
 
 [![DroneAid](https://img.youtube.com/vi/9fRcis-5Zuc/0.jpg)](https://www.youtube.com/watch?v=9fRcis-5Zuc)
@@ -78,11 +83,11 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Authors
 
+* [Pedro Cruz](https://github.com/pedrocruzio)
 * [Va Barbosa](https://github.com/vabarbosa)
 * [Nick Bourdakos](https://github.com/bourdakos1)
 * [John Walicki](https://github.com/johnwalicki)
 * [Daniel Krook](https://github.com/krook)
-* [Pedro Cruz](https://github.com/pedrocruzio)
 
 ## License
 
