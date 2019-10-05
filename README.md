@@ -2,7 +2,7 @@
 
 DroneAid uses machine learning to detect calls for help on the ground placed by those in need. At the heart of DroneAid is a *Symbol Language* that is used to train a visual recognition model. That model analyzes video from a drone to detect and count specific images. A dashboard can be used to plot those locations on a map and initiate a response.
 
-[![License](https://img.shields.io/badge/License-Apache2-red.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/badge/Join-Slack-red)](https://code-and-response.slack.com/join/shared_invite/enQtNzUzOTAzNDE3MTM4LWM4M2VlOTA3OWNjMjY0ZTI4MjQ2OTBjYjYwNmQ1NTdhYjZhODE5NjFkN2QyNmRkNDI5OTFlZmVjYTFhMmMwYmU)
+[![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/badge/Join-Slack-blue)](https://code-and-response.slack.com/join/shared_invite/enQtNzUzOTAzNDE3MTM4LWM4M2VlOTA3OWNjMjY0ZTI4MjQ2OTBjYjYwNmQ1NTdhYjZhODE5NjFkN2QyNmRkNDI5OTFlZmVjYTFhMmMwYmU)
 
 ## An aerial scout for first responders
 
