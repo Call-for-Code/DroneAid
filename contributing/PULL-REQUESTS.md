@@ -39,7 +39,7 @@ so that you can make the actual changes. This is where we will start.
 ## Dependencies
 
 More details to come on DroneAid dependencies. In case of doubt, open an issue in the
-[issue tracker](https://github.com/Code-and-Response/DroneAid/issues/) or engage on the 
+[issue tracker](https://github.com/Code-and-Response/DroneAid/issues/) or engage on the
 [DroneAid Slack workspace][].
 
 ## Setting up your local environment
@@ -184,8 +184,8 @@ $ git push origin my-branch
 
 ### Step 8: Opening the Pull Request
 
-From within GitHub, opening a new Pull Request will present you with a few 
-form fields. 
+From within GitHub, opening a new Pull Request will present you with a few
+form fields.
 
 Please try to do your best at filling out the details, but feel free to skip
 parts if you're not sure what to put.
@@ -486,6 +486,6 @@ longer to be merged in.
 If you want to know more about the code review and the landing process, see the
 [Collaborator Guide][].
 
-[Code of Conduct]: https://github.com/Code-and-Response/DroneAid/doc/guides/coc.md
-[Collaborator Guide]: ../../../CONTRIBUTING.md
+[Code of Conduct]: https://github.com/Code-and-Response/DroneAid/blob/master/CONTRIBUTING.md#code-of-conduct
+[Collaborator Guide]: https://github.com/Code-and-Response/DroneAid/blob/master/CONTRIBUTING.md
 [DroneAid Slack workspace]: https://code-and-response.slack.com/join/shared_invite/enQtNzUzOTAzNDE3MTM4LWM4M2VlOTA3OWNjMjY0ZTI4MjQ2OTBjYjYwNmQ1NTdhYjZhODE5NjFkN2QyNmRkNDI5OTFlZmVjYTFhMmMwYmU
