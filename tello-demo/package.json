@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "standard",
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "node download.js https://cdn.jsdelivr.net/npm/@cloud-annotations/object-detection public/js/object-detection.js"
   },
   "author": "",
   "contributors": [
