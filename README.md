@@ -45,10 +45,10 @@ These symbols include those below, which represent a subset of the icons provide
 
 | Symbol | Meaning | Symbol | Meaning |
 |--------|--------- |--------|---------|
-| <img src="img/icons/icon-sos.png" width="100" alt="SOS"> | Immediate Help Needed | <img src="img/icons/icon-shelter.png" width="100" alt="Shelter"> | Shelter Needed |
-| <img src="img/icons/icon-ok.png" width="100" alt="OK"> | No Help Needed | <img src="img/icons/icon-firstaid.png" width="100" alt="FirstAid">| First Aid Kit Needed |
-| <img src="img/icons/icon-water.png" width="100" alt="Water"> | Water Needed | <img src="img/icons/icon-children.png" width="100" alt="Children">| Area with Children in Need |
-| <img src="img/icons/icon-food.png" width="100" alt="Food"> | Food Needed | <img src="img/icons/icon-elderly.png" width="100" alt="Elderly"> | Area with Elderly in Need |
+| <img src="img/icons/icon-sos.png" width="100" alt="SOS"> | Immediate Help Needed<br>(orange; downward triangle over SOS) | <img src="img/icons/icon-shelter.png" width="100" alt="Shelter"> | Shelter Needed<br>(cyan; person standing in structure)  |
+| <img src="img/icons/icon-ok.png" width="100" alt="OK"> | No Help Needed<br>(green; upward triangle over OK) | <img src="img/icons/icon-firstaid.png" width="100" alt="FirstAid">| First Aid Kit Needed<br>(yellow; case with first aid cross) |
+| <img src="img/icons/icon-water.png" width="100" alt="Water"> | Water Needed<br>(blue; water droplet) | <img src="img/icons/icon-children.png" width="100" alt="Children">| Area with Children in Need<br>(lilac; baby with diaper) |
+| <img src="img/icons/icon-food.png" width="100" alt="Food"> | Food Needed<br>(red; pan with wheat) | <img src="img/icons/icon-elderly.png" width="100" alt="Elderly"> | Area with Elderly in Need<br>(purple; person with cane) |
 
 
 ## See it in action
@@ -88,6 +88,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 * [Nick Bourdakos](https://github.com/bourdakos1)
 * [John Walicki](https://github.com/johnwalicki)
 * [Daniel Krook](https://github.com/krook)
+* [Wes Turner](https://github.com/westurner)
 
 ## License
 
