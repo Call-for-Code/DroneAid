@@ -1,8 +1,8 @@
-# <img src="img/droneaid-logo.png" height="100" alt="DroneAid logo"> 
+# <img src="img/droneaid-logo.png" height="100" alt="DroneAid logo">
 
 DroneAid uses machine learning to detect calls for help on the ground placed by those in need. At the heart of DroneAid is a *Symbol Language* that is used to train a visual recognition model. That model analyzes video from a drone to detect and count specific images. A dashboard can be used to plot those locations on a map and initiate a response.
 
-[![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/badge/Join-Slack-blue)](https://code-and-response.slack.com/join/shared_invite/enQtNzUzOTAzNDE3MTM4LWM4M2VlOTA3OWNjMjY0ZTI4MjQ2OTBjYjYwNmQ1NTdhYjZhODE5NjFkN2QyNmRkNDI5OTFlZmVjYTFhMmMwYmU)
+[![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/badge/Join-Slack-blue)](https://join.slack.com/t/code-and-response/shared_invite/enQtNzkyMDUyODg1NDU5LTdkZDhmMjJkMWI1MDk1ODc2YTc2OTEwZTI4MGI3NDI0NmZmNTg0Zjg5NTVmYzNiNTYzNzRiM2JkZjYzOWIwMWE)
 
 ## An aerial scout for first responders
 
@@ -37,7 +37,7 @@ Pedro Cruz explains his inspiration for DroneAid, based on his experience in Pue
 
 ## DroneAid Symbol Language
 
-The DroneAid Symbol Language provides a way for those affected by natural disasters to express their needs and make them visible to drones, planes, and satellites when traditional communications are not available. 
+The DroneAid Symbol Language provides a way for those affected by natural disasters to express their needs and make them visible to drones, planes, and satellites when traditional communications are not available.
 
 Victims can use a pre-packaged symbol kit that has been manufactured and distributed to them, or recreate the symbols manually with whatever materials they have available.
 
@@ -88,9 +88,9 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 * [Nick Bourdakos](https://github.com/bourdakos1)
 * [John Walicki](https://github.com/johnwalicki)
 * [Daniel Krook](https://github.com/krook)
+* [Derek Teay](https://github.com/derekteay)
 * [Wes Turner](https://github.com/westurner)
 
 ## License
 
 This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE) file for details.
-
