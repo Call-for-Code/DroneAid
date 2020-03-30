@@ -1,30 +1,35 @@
 ;(function() {
-  let maxPredictionsHistory = 3
+  let maxPredictionsHistory = 10
   let previousPredictions = []
   const totalCounts = {}
 
   const intersects = function(a, b) {
-    const xminA = a[0]
-    const yminA = a[1]
-    const xmaxA = xminA + a[2]
-    const ymaxA = yminA + a[3]
-    const xminB = b[0]
-    const yminB = b[1]
-    const xmaxB = xminB + b[2]
-    const ymaxB = yminB + b[3]
+    if (a.class === b.class) {
+      const xminA = a[0]
+      const yminA = a[1]
+      const xmaxA = xminA + a[2]
+      const ymaxA = yminA + a[3]
+      const xminB = b[0]
+      const yminB = b[1]
+      const xmaxB = xminB + b[2]
+      const ymaxB = yminB + b[3]
 
-    const aLeftOfB = xmaxA < xminB
-    const aRightOfB = xminA > xmaxB
-    const aAboveB = yminA > ymaxB
-    const aBelowB = ymaxA < yminB
+      const aLeftOfB = xmaxA < xminB
+      const aRightOfB = xminA > xmaxB
+      const aAboveB = yminA > ymaxB
+      const aBelowB = ymaxA < yminB
 
-    return !(aLeftOfB || aRightOfB || aAboveB || aBelowB)
+      return !(aLeftOfB || aRightOfB || aAboveB || aBelowB)
+    } else {
+      return false
+    }
   }
 
   const tally = function(predictions) {
     if (predictions && predictions.length) {
       if (!previousPredictions.length) {
         predictions.forEach(pred => {
+          console.log('new', pred.class)
           totalCounts[pred.class]++
           previousPredictions.push(pred.bbox)
         })
@@ -32,15 +37,16 @@
         const newBoxes = []
         const foundBoxes = []
         predictions.forEach(pred => {
-          const bbox = pred.bbox
           const exists = previousPredictions.flat().some(prev => {
-            return intersects(prev, bbox)
+            return intersects(prev, pred)
           })
           if (exists) {
-            foundBoxes.push(bbox)
+            console.log('exists', pred.class)
+            foundBoxes.push(pred)
           } else {
+            console.log('new', pred.class)
             totalCounts[pred.class]++
-            newBoxes.push(bbox)
+            newBoxes.push(pred)
           }
         })
 
@@ -78,5 +84,10 @@
 
   counter.tally = tally
   counter.reset = reset
+  counter.history = function(size) {
+    if (size) {
+      maxPredictionsHistory = size
+    }
+  }
   window.droneaidCounter = counter
 })()

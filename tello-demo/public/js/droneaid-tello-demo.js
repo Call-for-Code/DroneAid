@@ -6,7 +6,8 @@ let predictionCanvasCtx
 
 let jsmpegPlayer
 let predictionEnabled = false
-let confidenceThreshold = 0.4
+let confidenceThreshold = 0.6
+let historyThreshold = 15
 
 let counter
 let model
@@ -20,6 +21,11 @@ const predictionToggled = function() {
 
 const confidenceChanged = function() {
   confidenceThreshold = document.getElementById('confidenceSlider').value
+}
+
+const historyChanged = function() {
+  historyThreshold = document.getElementById('historySlider').value
+  counter.history(historyThreshold)
 }
 
 const manualStreamTello = function() {
@@ -83,20 +89,18 @@ const predictStream = async function() {
   if (predictionEnabled && model) {
     // console.time('predict')
     const predictions = await model.detect(streamCanvas)
-    // const predictions = await droneaid.predict(streamCanvas, {
-    //   scoreThreshold: confidenceThreshold
-    // })
     // console.timeEnd('predict')
-    console.log(predictions)
-    // Always render predictions.
-    renderPredictions(predictions)
+    // console.log(predictions)
+    // render predictions above confidence threshold
+    const filteredPredictions = predictions.filter(pred => {
+      return pred.score >= confidenceThreshold
+    })
 
-    if (predictions && predictions.length) {
-      try {
-        renderCounts(counter.tally(predictions))
-      } catch (e) {
-        console.error(e)
-      }
+    renderPredictions(filteredPredictions)
+    try {
+      renderCounts(counter.tally(filteredPredictions))
+    } catch (e) {
+      console.error(e)
     }
   }
 
@@ -218,7 +222,7 @@ const init = function() {
     'shelter',
     'elderly',
     'food'
-  ])
+  ], historyThreshold)
   predictionToggled()
   setState()
   setInterval(batteryCheck, 5 * 1000)
