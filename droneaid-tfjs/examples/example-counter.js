@@ -1,16 +1,20 @@
 (function () {
-  let maxPredictionsHistory = 3
+  let maxPredictionsHistory = 10
   let previousPredictions = []
   const totalCounts = {}
 
   const intersects = function (a, b) {
-    // [xmin, ymin, xmax, ymax]
-    const aLeftOfB = a[2] < b[0]
-    const aRightOfB = a[0] > b[2]
-    const aAboveB = a[1] > b[3]
-    const aBelowB = a[3] < b[1]
+    if (a.label === b.label) {
+      // [xmin, ymin, xmax, ymax]
+      const aLeftOfB = a[2] < b[0]
+      const aRightOfB = a[0] > b[2]
+      const aAboveB = a[1] > b[3]
+      const aBelowB = a[3] < b[1]
 
-    return !(aLeftOfB || aRightOfB || aAboveB || aBelowB)
+      return !(aLeftOfB || aRightOfB || aAboveB || aBelowB)
+    } else {
+      return false
+    }
   }
 
   const tally = function (predictions) {
@@ -18,21 +22,20 @@
       if (!previousPredictions.length) {
         predictions.forEach(pred => {
           totalCounts[pred.label]++
-          previousPredictions.push(pred.bbox)
+          previousPredictions.push(pred)
         })
       } else {
         const newBoxes = []
         const foundBoxes = []
         predictions.forEach(pred => {
-          const bbox = pred.bbox
           const exists = previousPredictions.flat().some(prev => {
-            return intersects(prev, bbox)
+            return intersects(prev, pred)
           })
           if (exists) {
-            foundBoxes.push(bbox)
+            foundBoxes.push(pred)
           } else {
             totalCounts[pred.label]++
-            newBoxes.push(bbox)
+            newBoxes.push(pred)
           }
         })
 
@@ -70,5 +73,7 @@
 
   counter.tally = tally
   counter.reset = reset
+  counter.maxHistory = maxPredictionsHistory
+
   window.droneaidCounter = counter
 }())
