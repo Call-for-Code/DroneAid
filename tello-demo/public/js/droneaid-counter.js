@@ -29,7 +29,6 @@
     if (predictions && predictions.length) {
       if (!previousPredictions.length) {
         predictions.forEach(pred => {
-          console.log('new', pred.class)
           totalCounts[pred.class]++
           previousPredictions.push(pred.bbox)
         })
@@ -41,10 +40,8 @@
             return intersects(prev, pred)
           })
           if (exists) {
-            console.log('exists', pred.class)
             foundBoxes.push(pred)
           } else {
-            console.log('new', pred.class)
             totalCounts[pred.class]++
             newBoxes.push(pred)
           }
