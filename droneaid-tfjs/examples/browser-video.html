@@ -12,12 +12,21 @@
           <input id="videoFile" type="file" accept="video/*" onchange="videoUploaded()">
           <button id="startButton" style="display:none;" onclick="startVideoPrediction()">start</button>
           <button id="stopButton" style="display:none;" onclick="stopVideoPrediction()">stop</button>
+          <button id="resetButton" style="display:none;" onclick="resetPrediction()">reset</button>
         </div>
         <div>
-          <label for="scoreThreshold" style="vertical-align: bottom;">confidence</label>
-          <input type="range" id="scoreThreshold" name="volume" min="0.1" max="1" step="0.05" value="0.4"  style="vertical-align: bottom;">
-          <label for="playbackSpeed" style="vertical-align: bottom;">speed</label>
-          <input type="range" id="playbackSpeed" name="volume" min="0.1" max="1" step="0.05" value="0.45"  style="vertical-align: bottom;">
+          <div>
+            <label for="scoreThreshold" style="vertical-align: bottom;">confidence</label>
+            <input type="range" id="scoreThreshold" name="volume" min="0.1" max="1" step="0.05" value="0.4"  style="vertical-align: bottom;">
+          </div>
+          <div>
+            <label for="playbackSpeed" style="vertical-align: bottom;">speed</label>
+            <input type="range" id="playbackSpeed" name="volume" min="0.1" max="1" step="0.05" value="0.45"  style="vertical-align: bottom;">
+          </div>
+          <div>
+            <label for="maxHistory" style="vertical-align: bottom;">history</label>
+            <input type="range" id="maxHistory" name="volume" min="1" max="30" step="1" value="15"  style="vertical-align: bottom;">
+          </div>
         </div>
       </div>
 
@@ -70,6 +79,7 @@
 
             document.getElementById('startButton').style.display = ''
             document.getElementById('stopButton').style.display = ''
+            document.getElementById('resetButton').style.display = ''
             scoreThreshold = document.getElementById('scoreThreshold')
           }, false)
 
@@ -90,6 +100,14 @@
         video.pause()
       }
 
+      function resetPrediction() {
+        theCounter.reset()
+        context.clearRect(0, 0, canvas.width, canvas.height)
+        droneaid.labels.forEach(l => {
+          document.getElementById(`${l}-count`).innerText = 0
+        })
+      }
+
       function runPrediction() {
         if (!video.paused && !video.ended) {
           // console.time('predict')
@@ -100,7 +118,7 @@
                 try {
                   // console.time('render')
                   renderPredictions(predictions)
-                  const counts = droneaidCounter.tally(predictions)
+                  const counts = theCounter.tally(predictions)
                   renderCounts(counts)
                   // console.timeEnd('render')
                 } catch (e) {
@@ -150,7 +168,8 @@
       }
 
       function init() {
-        theCounter = droneaidCounter(droneaid.labels)
+        const history = document.getElementById('maxHistory').value
+        theCounter = droneaidCounter(droneaid.labels, history)
 
         const labelsCount = document.getElementById('labelsCount')
         droneaid.labels.forEach(label => {

@@ -15,15 +15,6 @@ This directory contains the instructions for viewing the streaming video from a 
    ```
    $ git clone https://github.com/Code-and-Response/DroneAid.git
    ```  
-1. Change to `droneaid-tfjs` directory
-   ```
-   $ cd DroneAid/droneaid-tfjs
-   ```  
-1. Install dependencies & build package
-   ```
-   $ npm install
-   $ npm run build
-   ```  
 1. Change to `tello-demo` directory
    ```
    $ cd ../tello-demo

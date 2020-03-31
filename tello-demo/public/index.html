@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>droneaid // tello demo</title>
+    <link rel="icon" href="/img/logo_icon_black_196.png">
     <link rel="stylesheet" href="/css/codait.css">
     <link rel="stylesheet" href="/css/droneaid-tello.css">
   </head>
@@ -42,9 +43,14 @@
         </div>
       </fieldset>
       <fieldset class="max-field max-threshold-fieldset">
-        <label for="confidenceSlider">Confidence</label>
-        <input id="confidenceSlider" type="range" min="0.1" max="1" step="0.05" value="0.4" onchange="confidenceChanged();">
+        <label for="confidenceSlider">Min Confidence Level</label>
+        <input id="confidenceSlider" type="range" min="0.1" max="1" step="0.05" value="0.6" onchange="confidenceChanged();">
         <span data-max-range="confidenceSlider"></span>
+      </fieldset>
+      <fieldset class="max-field max-threshold-fieldset">
+        <label for="historySlider">Counter Prediction History</label>
+        <input id="historySlider" type="range" min="1" max="30" step="1" value="15" onchange="historyChanged();">
+        <span data-max-range="historySlider"></span>
       </fieldset>
       <div class="max-field spacer-field"> </div>
       <div class="max-field battery-field">
@@ -60,13 +66,18 @@
     
     <aside class="max-panel" id="max-info-panel">
       <h1>DroneAid</h1>
-      <h2>Creating a universal language to become the voice of millions.</h2>
+      <p>Creating a universal language to become the voice of millions.</p>
+      <h3>Learn more</h3>
       <p>
-        Learn more:
         <ul>
           <li>
             <a href="https://developer.ibm.com/blogs/droneaid-visual-recognition-helps-hurricane-victims/" target="_blank">
               DroneAID: Visual recognition helps hurricane victims
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Code-and-Response/DroneAid" target="_blank">
+              DroneAid GitHub respository
             </a>
           </li>
           <li>
@@ -76,6 +87,27 @@
           </li>
         </ul>
       </p>
+      <h3>Usage</h3>
+      <p>
+        Detailed setup instructions available in the <a href="https://github.com/Code-and-Response/DroneAid/tree/master/tello-demo" target="_blank">GitHub repository</a>.
+      </p>
+      <ul>
+        <li>
+          <p>
+            After connecting your computer to your Tello's Wi-Fi, click <strong>Start Stream</strong>
+            to view the live stream from the Tello Drone.
+          </p>
+        </li>
+        <li>
+          <p>Adjust settings as necessary:</p>
+          <dl>
+            <dt>Prediction</dt><dd>Enable/disable model prediction</dd>
+            <dt>Min Confidence Level</dt><dd>Set minimum confidence level for prediction</dd>
+            <dt>Counter Prediction History</dt><dd>Set maximum prediction history maintained for comparison when counting detected objects</dd>
+          </dl>
+        </li>
+        <li>Fly the drone</li>
+      </ul>
       <div class="max-toolbar">
         
       </div>
