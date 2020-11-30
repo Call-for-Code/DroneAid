@@ -488,4 +488,4 @@ If you want to know more about the code review and the landing process, see the
 
 [Code of Conduct]: https://github.com/Code-and-Response/DroneAid/blob/master/CONTRIBUTING.md#code-of-conduct
 [Collaborator Guide]: https://github.com/Code-and-Response/DroneAid/blob/master/CONTRIBUTING.md
-[DroneAid Slack workspace]: https://code-and-response.slack.com/join/shared_invite/enQtNzUzOTAzNDE3MTM4LWM4M2VlOTA3OWNjMjY0ZTI4MjQ2OTBjYjYwNmQ1NTdhYjZhODE5NjFkN2QyNmRkNDI5OTFlZmVjYTFhMmMwYmU
+[DroneAid Slack workspace]: https://callforcode.org/slack
