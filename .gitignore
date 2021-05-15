@@ -1,7 +1,15 @@
-object-detection.js
+crossorigin="anonymous"
+flex
+img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none
+script crossorigin="anonymous" defer="defer" integrity="sha512..."
+media="all"
+link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com"
+link rel="dns-prefetch" href=https://user-images.githubusercontent.com"
+link rel="dns-prefetch" href="https://avatars.githubusercontent.com"
+link rel="dns-prefetch" href="https://github.githubassets.com"
 
-.DS_Store
-.vscode
 
-node_modules/
+
+
+
 dist/
