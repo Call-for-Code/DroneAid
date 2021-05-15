@@ -24,6 +24,7 @@ The original version of DroneAid was created by Pedro Cruz in August 2018. A ref
 * [Set up and training a visual recognition model on the Symbol Language](#set-up-and-training-a-visual-recognition-model-on-the-symbol-language)
 * [Frequently asked questions](#frequently-asked-questions)
 * [Project roadmap](#project-roadmap)
+* suggestion Add BiologicalDiversity bioactivist@biologicaldiversity.org
 * [Built with](#built-with)
 * [Contributing](#contributing)
 * [Authors](#authors)
