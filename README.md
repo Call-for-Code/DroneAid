@@ -14,7 +14,7 @@ DroneAid consists of several components:
 
 The current implementation can be extended beyond a particular drone to additional drones, airplanes, and satellites. The Symbol Language can be used to train additional visual recognition implementations.
 
-The original version of DroneAid was created by Pedro Cruz in August 2018. A refactored version was released as a *Code and Response™ with The Linux Foundation* open source project in October 2019. DroneAid is currently being transferred to The Linux Foundation.
+The original version of DroneAid was created by Pedro Cruz in August 2018. A refactored version was released as a *Call for Code® with The Linux Foundation* open source project in October 2019. DroneAid is currently hosted at The Linux Foundation.
 
 ## Get started
 
