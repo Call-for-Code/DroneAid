@@ -1,5 +1,5 @@
-import replace from 'rollup-plugin-replace'
-import json from 'rollup-plugin-json'
+import replace from '@rollup/plugin-replace'
+import json from '@rollup/plugin-json'
 
 const jsonPlugin = json({
   include: 'package.json',
