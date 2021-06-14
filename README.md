@@ -21,7 +21,8 @@ The original version of DroneAid was created by Pedro Cruz in August 2018. A ref
 * [The DroneAid origin story](#the-droneaid-origin-story)
 * [DroneAid Symbol Language](#droneaid-symbol-language)
 * [See it in action](#see-it-in-action)
-* [Set up and training a visual recognition model on the Symbol Language](#set-up-and-training-a-visual-recognition-model-on-the-symbol-language)
+* [Use the pre-trained visual recognition model on the Symbol Language](#use-the-pre-trained-visual-recognition-model-on-the-symbol-language)
+* [Set up and training the model](#set-up-and-training-the-model)
 * [Frequently asked questions](#frequently-asked-questions)
 * [Project roadmap](#project-roadmap)
 * [Built with](#built-with)
@@ -57,7 +58,11 @@ These symbols include those below, which represent a subset of the icons provide
 
 A demonstration implementation takes the video stream of DJI Tello drone and analyzes the frames to find and count symbols. See [tello-demo](tello-demo) for instructions on how to get it running.
 
-## Set up and training a visual recognition model on the Symbol Language
+## Use the pre-trained visual recognition model on the Symbol Language
+
+See the [DroneAid Tensorflow.js](droneaid-tfjs/README.md) example.
+
+## Set up and training the model
 
 In order to train the model, we must place the symbols into simulated environments so that the system knows how to detect them in a variety of conditions (i.e. whether they are distorted, faded, or in low light conditions).
 
