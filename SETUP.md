@@ -40,7 +40,7 @@ Download the [sample Lens Studio project](augmented-reality-image-training) to r
 
 ## Train the model
 
-Follow the steps in [this tutorial](https://cloud-annotations.github.io/training/object-detection/cli/) to create the model. Once finished, download the `model_web` folder to your computer.
+Follow the steps in [this tutorial](https://cloud.annotations.ai/workshops/object-detection/) to create the model. Once finished, download the `model_web` folder to your computer.
 
 ## Deploy the dashboard
 
