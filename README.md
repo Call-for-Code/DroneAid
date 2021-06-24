@@ -60,7 +60,9 @@ A demonstration implementation takes the video stream of DJI Tello drone and ana
 
 ## Use the pre-trained visual recognition model on the Symbol Language
 
-See the [DroneAid Tensorflow.js](droneaid-tfjs/README.md) example.
+See the [Tensorflow.js](droneaid-tfjs/README.md) example.
+
+See the [Tensorflow.js](droneaid-ce/README.md) example deployed to Code Engine.
 
 ## Set up and training the model
 
@@ -95,6 +97,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 * [Daniel Krook](https://github.com/krook)
 * [Derek Teay](https://github.com/derekteay)
 * [Wes Turner](https://github.com/westurner)
+* [Upkar Lidder](https://github.com/upkarlidder)
 
 ## License
 
