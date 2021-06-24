@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>droneaid-tfjs // image</title>
+  </head>
+  <body>
+    <div style="margin: 20px;">
+      <h1>droneaid-tfjs // image</h1>
+      <div style="padding: 10px;">
+        <input id="modelimage" type="file" name="filename" accept="image/gif, image/jpeg, image/png" onchange="loadImage(this);">
+        <button id="modelrun" onclick="runModel();">run inference</button>
+      </div>
+      
+      <div style="padding: 10px;">
+        <div id="capimg" style="position:relative;display:inline-block;min-width:600px;vertical-align:top;">
+          <canvas id="canvasimage" style="z-index:1; position:absolute; left:0px; top:0px;"></canvas>
+        </div>
+        <div id="message" style="position:relative;display:inline-block;"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.2.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@codait/max-vis"></script>
+    <script src="dist/droneaid-tfjs.js"></script>
+    <script>
+      let imageSource
+  
+      function disableElements () {
+        document.getElementById('modelimage').setAttribute('disabled', true)
+        document.getElementById('modelrun').setAttribute('disabled', true)
+      }
+      function enableElements () {
+        document.getElementById('modelimage').removeAttribute('disabled')
+        document.getElementById('modelrun').removeAttribute('disabled')
+      }
+      function message (msg) {
+        const node = document.createElement('div')
+        node.innerText = msg
+        document.getElementById('message').appendChild(node)
+      }
+  
+      function loadImage (input) {
+        if (input.files && input.files[0]) {
+          disableElements()
+  
+          let reader = new FileReader()
+  
+          reader.onload = function (e) {
+            imageSource = reader.result
+  
+            let image = new Image()
+            image.onload = function () {
+              showImage(image)
+              enableElements()
+            }
+            image.src = imageSource
+          }
+  
+          reader.readAsDataURL(input.files[0])
+        }
+      }
+  
+      function showImage (image) {
+        const imageSize = 512
+        const resizeRatio = imageSize / Math.max(image.width, image.height)
+        let width = Math.round(resizeRatio * image.width)
+        let height = Math.round(resizeRatio * image.height)
+  
+        image.width = width
+        image.height = height
+  
+        let canvas = document.getElementById('canvasimage')
+        canvas.width = image.width
+        canvas.height = image.height
+  
+        let ctx = canvas.getContext('2d')
+        ctx.clearRect(0, 0, width, height)
+        ctx.drawImage(image, 0, 0, width, height)
+      }
+  
+      function renderPredictions (prediction) {
+        message(`the following object(s) were detected: ${prediction.map(p => p.label)}`)
+  
+        maxvis.overlay(prediction, document.getElementById('canvasimage'))
+      }
+  
+      function runModel () {
+        if (!imageSource) {
+          message('please upload an image')
+        } else {
+          disableElements()
+          message('running prediction...')
+          droneaid.predict(imageSource)
+            .then(renderPredictions)
+            .catch(message)
+            .then(enableElements)
+        }
+      }
+  
+      const init = function () {
+        message(`droneaid-tfjs v${droneaid.version}`)
+      }
+  
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init)
+      } else {
+        init()
+      }
+    </script>
+  </body>
+</html>

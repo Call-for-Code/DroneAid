@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>droneaid-tfjs // video</title>
+  </head>
+  <body>
+    <div style="margin: 20px;">
+      <h1>droneaid-tfjs // video</h1>
+      <div style="padding: 10px;">
+        <div>
+          <input id="videoFile" type="file" accept="video/*" onchange="videoUploaded()">
+          <button id="startButton" style="display:none;" onclick="startVideoPrediction()">start</button>
+          <button id="stopButton" style="display:none;" onclick="stopVideoPrediction()">stop</button>
+          <button id="resetButton" style="display:none;" onclick="resetPrediction()">reset</button>
+        </div>
+        <div>
+          <div>
+            <label for="scoreThreshold" style="vertical-align: bottom;">confidence</label>
+            <input type="range" id="scoreThreshold" name="volume" min="0.1" max="1" step="0.05" value="0.4"  style="vertical-align: bottom;">
+          </div>
+          <div>
+            <label for="playbackSpeed" style="vertical-align: bottom;">speed</label>
+            <input type="range" id="playbackSpeed" name="volume" min="0.1" max="1" step="0.05" value="0.45"  style="vertical-align: bottom;">
+          </div>
+          <div>
+            <label for="maxHistory" style="vertical-align: bottom;">history</label>
+            <input type="range" id="maxHistory" name="volume" min="1" max="30" step="1" value="15"  style="vertical-align: bottom;">
+          </div>
+        </div>
+      </div>
+
+      <div style="padding: 10px;position: relative;">
+        <div style="position:relative;display:inline-block;min-width:600px;vertical-align:top;">
+          <video id="video" style="position: absolute;top: 0;left: 0;"></video>
+          <canvas id="drawingCanvas" style="position: absolute;top: 0;left: 0;"></canvas>
+        </div>
+        <div id="labelsCount" style="position:relative;display:inline-block;"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="/dist/droneaid-tfjs.js"></script>
+    <script src="example-counter.js"></script>
+    <script>
+      let video
+      let canvas
+      let context
+      let scoreThreshold
+
+      let theCounter
+
+      function renderCounts(totalCounts) {
+        Object.keys(totalCounts).forEach(l => {
+          document.getElementById(`${l}-count`).innerText = totalCounts[l]
+        })
+      }
+
+      function videoUploaded() {
+        const input = document.getElementById('videoFile')
+        const file = input.files[0]
+        const type = file.type
+
+        video = document.getElementById('video')
+
+        if (video.canPlayType(type) === '') {
+          console.log('cannot play video:', type)
+        } else {
+          const fileURL = URL.createObjectURL(file)
+          
+          video.addEventListener('loadedmetadata', function (e) {
+            canvas = document.getElementById('drawingCanvas')
+            context = canvas.getContext('2d')
+
+            video.width = video.offsetWidth
+            video.height = video.offsetHeight
+            canvas.width = video.offsetWidth
+            canvas.height = video.offsetHeight
+
+            document.getElementById('startButton').style.display = ''
+            document.getElementById('stopButton').style.display = ''
+            document.getElementById('resetButton').style.display = ''
+            scoreThreshold = document.getElementById('scoreThreshold')
+          }, false)
+
+          video.src = fileURL
+        }
+      }
+
+      function startVideoPrediction() {
+        if (video.paused || video.ended) {
+          video.playbackRate = document.getElementById('playbackSpeed').value
+          video.volume = 0
+          video.play()
+          runPrediction()
+        }
+      }
+
+      function stopVideoPrediction() {
+        video.pause()
+      }
+
+      function resetPrediction() {
+        theCounter.reset()
+        context.clearRect(0, 0, canvas.width, canvas.height)
+        droneaid.labels.forEach(l => {
+          document.getElementById(`${l}-count`).innerText = 0
+        })
+      }
+
+      function runPrediction() {
+        if (!video.paused && !video.ended) {
+          // console.time('predict')
+          droneaid.predict(video, { scoreThreshold: scoreThreshold.value })
+            .then(predictions => {
+              // console.timeEnd('predict')
+              if (predictions && predictions.length) {
+                try {
+                  // console.time('render')
+                  renderPredictions(predictions)
+                  const counts = theCounter.tally(predictions)
+                  renderCounts(counts)
+                  // console.timeEnd('render')
+                } catch (e) {
+                  console.log(e)
+                }
+              }
+            })
+            .catch(e => console.error)
+            .then(() => {
+              // setTimeout(runPrediction, 200)
+              requestAnimationFrame(runPrediction)
+            })
+        }
+      }
+
+      const renderPredictions = (predictions) => {
+        context.clearRect(0, 0, canvas.width, canvas.height)
+
+        const font = '16px sans-serif'
+        context.font = font
+        context.textBaseline = 'top'
+        predictions.forEach(prediction => {
+          const x = prediction.bbox[1] * canvas.width
+          const y = prediction.bbox[0] * canvas.height
+          const width = (prediction.bbox[3] * canvas.width) - x
+          const height = (prediction.bbox[2] * canvas.height) - y
+          const label = `${prediction.label}: ${(prediction.score).toFixed(2)}`
+
+          context.strokeStyle = '#FFFF3F'
+          context.lineWidth = 5
+          context.strokeRect(x, y, width, height)
+
+          context.fillStyle = '#FFFF3F'
+          const textWidth = context.measureText(label).width
+          const textHeight = parseInt(font, 10) // base 10
+          context.fillRect(x, y, textWidth + 4, textHeight + 4)
+        })
+
+        predictions.forEach(prediction => {
+          const x = prediction.bbox[1] * canvas.width
+          const y = prediction.bbox[0] * canvas.height
+          const label = `${prediction.label}: ${(prediction.score).toFixed(2)}`
+
+          context.fillStyle = '#000000'
+          context.fillText(label, x, y)
+        })
+      }
+
+      function init() {
+        const history = document.getElementById('maxHistory').value
+        theCounter = droneaidCounter(droneaid.labels, history)
+
+        const labelsCount = document.getElementById('labelsCount')
+        droneaid.labels.forEach(label => {
+          const key = document.createElement('span')
+          key.innerText = `${label}: `
+
+          const value = document.createElement('span')
+          value.id = `${label}-count`
+          value.innerText = 0
+
+          const wrapper = document.createElement('div')
+          wrapper.id = label
+          wrapper.append(key)
+          wrapper.append(value)
+
+          labelsCount.append(wrapper)
+        })
+      }
+  
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init)
+      } else {
+        init()
+      }
+    </script>
+  </body>
+</html>
