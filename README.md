@@ -1,4 +1,4 @@
-[![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Community](https://img.shields.io/badge/Join-Community-blue.svg)](https://developer.ibm.com/callforcode/solutions/projects/get-started/)
+[![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/static/v1?label=Community&message=%23droneaid&color=blue)](https://developer.ibm.com/callforcode/solutions/projects/get-started/)
 
 # <img src="img/droneaid-logo.png" height="100" alt="DroneAid logo">
 
