@@ -1,79 +1,79 @@
 (function () {
-  let maxPredictionsHistory = 10
-  let previousPredictions = []
-  const totalCounts = {}
+  let maxPredictionsHistory = 10;
+  let previousPredictions = [];
+  const totalCounts = {};
 
   const intersects = function (a, b) {
     if (a.label === b.label) {
       // [xmin, ymin, xmax, ymax]
-      const aLeftOfB = a[2] < b[0]
-      const aRightOfB = a[0] > b[2]
-      const aAboveB = a[1] > b[3]
-      const aBelowB = a[3] < b[1]
+      const aLeftOfB = a[2] < b[0];
+      const aRightOfB = a[0] > b[2];
+      const aAboveB = a[1] > b[3];
+      const aBelowB = a[3] < b[1];
 
-      return !(aLeftOfB || aRightOfB || aAboveB || aBelowB)
+      return !(aLeftOfB || aRightOfB || aAboveB || aBelowB);
     } else {
-      return false
+      return false;
     }
-  }
+  };
 
   const tally = function (predictions) {
     if (predictions && predictions.length) {
       if (!previousPredictions.length) {
-        predictions.forEach(pred => {
-          totalCounts[pred.label]++
-          previousPredictions.push(pred)
-        })
+        predictions.forEach((pred) => {
+          totalCounts[pred.label]++;
+          previousPredictions.push(pred);
+        });
       } else {
-        const newBoxes = []
-        const foundBoxes = []
-        predictions.forEach(pred => {
-          const exists = previousPredictions.flat().some(prev => {
-            return intersects(prev, pred)
-          })
+        const newBoxes = [];
+        const foundBoxes = [];
+        predictions.forEach((pred) => {
+          const exists = previousPredictions.flat().some((prev) => {
+            return intersects(prev, pred);
+          });
           if (exists) {
-            foundBoxes.push(pred)
+            foundBoxes.push(pred);
           } else {
-            totalCounts[pred.label]++
-            newBoxes.push(pred)
+            totalCounts[pred.label]++;
+            newBoxes.push(pred);
           }
-        })
+        });
 
         if (previousPredictions.length >= maxPredictionsHistory) {
-          previousPredictions.pop()
+          previousPredictions.pop();
         }
-        previousPredictions.unshift([...foundBoxes, ...newBoxes])
+        previousPredictions.unshift([...foundBoxes, ...newBoxes]);
       }
     }
 
-    return totalCounts
-  }
+    return totalCounts;
+  };
 
   const reset = function () {
-    previousPredictions = []
+    previousPredictions = [];
 
-    Object.keys(totalCounts).forEach(l => {
-      totalCounts[l] = 0
-    })
-  }
+    Object.keys(totalCounts).forEach((l) => {
+      totalCounts[l] = 0;
+    });
+  };
 
   const counter = function (labels, size) {
     if (size) {
-      maxPredictionsHistory = size
+      maxPredictionsHistory = size;
     }
 
     if (labels) {
-      labels.forEach(l => {
-        totalCounts[l] = 0
-      })
+      labels.forEach((l) => {
+        totalCounts[l] = 0;
+      });
     }
 
-    return counter
-  }
+    return counter;
+  };
 
-  counter.tally = tally
-  counter.reset = reset
-  counter.maxHistory = maxPredictionsHistory
+  counter.tally = tally;
+  counter.reset = reset;
+  counter.maxHistory = maxPredictionsHistory;
 
-  window.droneaidCounter = counter
-}())
+  window.droneaidCounter = counter;
+})();

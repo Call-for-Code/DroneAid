@@ -1,11 +1,11 @@
 # Issues
 
-* [How to Contribute in Issues](#how-to-contribute-in-issues)
-* [Asking for General Help](#asking-for-general-help)
-* [Discussing non-technical topics](#discussing-non-technical-topics)
-* [Submitting a Bug Report](#submitting-a-bug-report)
-* [Triaging a Bug Report](#triaging-a-bug-report)
-* [Resolving a Bug Report](#resolving-a-bug-report)
+- [How to Contribute in Issues](#how-to-contribute-in-issues)
+- [Asking for General Help](#asking-for-general-help)
+- [Discussing non-technical topics](#discussing-non-technical-topics)
+- [Submitting a Bug Report](#submitting-a-bug-report)
+- [Triaging a Bug Report](#triaging-a-bug-report)
+- [Resolving a Bug Report](#resolving-a-bug-report)
 
 ## How to Contribute in Issues
 
@@ -30,7 +30,7 @@ issue to request an invitation.
 
 ## Discussing non-technical topics
 
-Discussion of non-technical topics are also best to discuss in the #general channel 
+Discussion of non-technical topics are also best to discuss in the #general channel
 of the [DroneAid Slack workspace][].
 
 ## Submitting a Bug Report
@@ -55,7 +55,7 @@ Contributors are encouraged to help one another make forward progress as much
 as possible, empowering one another to solve issues collaboratively. If you
 choose to comment on an issue that you feel either is not a problem that needs
 to be fixed, or if you encounter information in an issue that you feel is
-incorrect, explain *why* you feel that way with additional supporting context,
+incorrect, explain _why_ you feel that way with additional supporting context,
 and be willing to be convinced that you may be wrong. By doing so, we can often
 reach the correct outcome much faster.
 
@@ -67,4 +67,4 @@ opening and triaging issues, but carries with it a necessary review and approval
 workflow that ensures that the proposed changes meet the minimal quality and
 functional guidelines of the DroneAid project.
 
-[DroneAid Slack workspace]: https://callforcode.org/slack
+[droneaid slack workspace]: https://callforcode.org/slack

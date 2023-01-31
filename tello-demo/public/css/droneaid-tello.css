@@ -199,7 +199,7 @@ body:not(.busy) #symbol-count {
 }
 .max-log > span.max-error {
   color: red;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .max-toolbar .max-loading svg circle {

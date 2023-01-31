@@ -2,34 +2,42 @@
 
 This directory contains the instructions for viewing the streaming video from a Tello drone in the browser. The video in the browser can then be processed by TensorFlow.js and inference run against the DroneAid model.
 
-![Tello Drone Dashboard](../img/DashboardScreenshot.png)    
+![Tello Drone Dashboard](../img/DashboardScreenshot.png)
 
 ## Prerequisites
 
 1. Install [`Node.js`](https://nodejs.org)
 1. Install [`FFmpeg`](https://ffmpeg.org/) (this may take awhile)
+
+   ```sh
+   brew install ffmpeg
    ```
-   $ brew install ffmpeg
-   ```  
+
 1. Clone this repository
+
+   ```sh
+   git clone https://github.com/Code-and-Response/DroneAid.git
    ```
-   $ git clone https://github.com/Code-and-Response/DroneAid.git
-   ```  
+
 1. Change to `tello-demo` directory
+
+   ```sh
+   cd ../tello-demo
    ```
-   $ cd ../tello-demo
-   ```  
+
 1. Install dependencies
+
+   ```sh
+   npm install
    ```
-   $ npm install
-   ```  
 
 ## Run
 
 1. In a terminal window, start the server in the `tello-demo` directory
+
+   ```sh
+   npm start
    ```
-   $ npm start
-   ```  
 
 1. Open a browser and go to **http://127.0.0.1:3000/**.
 1. Connect computer to Tello drone's WiFi
@@ -48,7 +56,6 @@ Further performance improvements may be possible with changes to the
 - DroneAid TensorFlow.js model
 
 While `ffmpeg` is what is used here, it could be replaced with `mplayer` (or some other video streaming service/application).
-
 
 ## Links
 
