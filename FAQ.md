@@ -6,11 +6,11 @@ Yes. They will be using IBM Watson to train the machine learning model as well a
 
 **What type of drones can we leverage here?**
 
-Any and every drone that can capture a video stream can be used for the purposes of DroneAid. Since the machine learning model uses Tensorflow.js in the browser, we can capture the stream from any type of drone and apply inference from that stream. Right now, we have a tech demo that runs with small Tello drones. 
+Any and every drone that can capture a video stream can be used for the purposes of DroneAid. Since the machine learning model uses Tensorflow.js in the browser, we can capture the stream from any type of drone and apply inference from that stream. Right now, we have a tech demo that runs with small Tello drones.
 
 **Why are you open sourcing DroneAid?**
 
-I decided to make DroneAid open source for a few reasons: 
+I decided to make DroneAid open source for a few reasons:
 
 First, because Drone Aid is meant to be a helpful tool in the event of a natural disaster, it is paramount to make it available to as many people as we possibly can. The more talented developers who are using, tweaking, and training the software, the better and more efficient it will become.
 
@@ -32,10 +32,10 @@ Yes, the goal is to create the foundation for other developers, so that they can
 
 By making it open source, people can build a pilot with their own uses cases. DroneAid as a project is very ambitious, and it will require dozens of developers to bring it to fruition. What better way to improve this software than by collaborating with people from around the world? By crowdsourcing damage assessment and data collection after a natural disaster, it will certainly improve the machine learning model by creating a larger library of visual images.
 
-We're looking for contributions that will help us improve and iterate DroneAid. Right now, the system works with a video stream where DroneAid would benefit from being built into consumer drones, or custom "DroneAid" drones that are used specifically for natural disaster response. 
+We're looking for contributions that will help us improve and iterate DroneAid. Right now, the system works with a video stream where DroneAid would benefit from being built into consumer drones, or custom "DroneAid" drones that are used specifically for natural disaster response.
 
-Ultimately, the goal would be to have an automated fleet of drones that would launch right after a disaster, where they wouldn't require pilots and would use alternative communications systems (like [Project OWL](http://www.project-owl.com/)). 
+Ultimately, the goal would be to have an automated fleet of drones that would launch right after a disaster, where they wouldn't require pilots and would use alternative communications systems (like [Project OWL](http://www.project-owl.com/)).
 
 **How is DroneAid different from other projects?**
 
-It is important to keep in mind that DroneAid is a video-streaming, analyzing tool and vision system; it analyses video stream to detect SOS messages from the air. In this sense, DroneAid is unique. 
+It is important to keep in mind that DroneAid is a video-streaming, analyzing tool and vision system; it analyses video stream to detect SOS messages from the air. In this sense, DroneAid is unique.

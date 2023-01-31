@@ -5,17 +5,22 @@ This is a TensorFlow.js port of the **DroneAid** pre-trained model. The DroneAid
 ## Build
 
 1. Clone this repository
+
+   ```sh
+   git clone https://github.ibm.com/callforcode/DroneAid.git
    ```
-   $ git clone https://github.ibm.com/callforcode/DroneAid.git
-   ```  
+
 1. Change to `droneaid-tfjs` directory
+
+   ```sh
+   cd DroneAid/droneaid-tfjs
    ```
-   $ cd DroneAid/droneaid-tfjs
-   ```  
+
 1. Install dependencies & build package
-   ```
-   $ npm install
-   $ npm run build
+
+   ```sh
+   npm install
+   npm run build
    ```
 
 A `dist/` directory is created and populated with different JavaScript versions of the library (e.g., `droneaid-tfjs.js`)
@@ -36,13 +41,11 @@ The [`/examples`](examples) directory contains sample code.
 > **Note**: _When loaded in a browser, the global variable `droneaid` will be available to access the API._
 
 ```javascript
-let image = document.getElementById('my-image')
+let image = document.getElementById("my-image");
 
-droneaid
-  .predict(image)
-  .then(predictions => {
-    console.log(predictions)
-  })
+droneaid.predict(image).then((predictions) => {
+  console.log(predictions);
+});
 ```
 
 ### API

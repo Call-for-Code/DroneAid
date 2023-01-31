@@ -1,4 +1,4 @@
-@import url('../fonts/fonts.css');
+@import url("../fonts/fonts.css");
 
 :root {
   --teal-one: #08cdc7;
@@ -67,7 +67,7 @@ html {
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0.16px;
@@ -109,7 +109,8 @@ p {
   margin-bottom: 0.5rem;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
   font-size: 0.875rem;
   font-weight: 400;
@@ -138,7 +139,7 @@ li::before {
 }
 
 ul > li::before {
-  content: '\002013';
+  content: "\002013";
 }
 
 ol > li::before {
@@ -146,14 +147,15 @@ ol > li::before {
 }
 
 code {
-  font-family: 'IBM Plex Mono', Courier, monospace;
+  font-family: "IBM Plex Mono", Courier, monospace;
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1rem;
   letter-spacing: 0.32px;
 }
 
-button, .max-btn,
+button,
+.max-btn,
 input[type="button"],
 input[type="submit"],
 input[type="reset"],
@@ -212,11 +214,13 @@ select {
   color: var(--text-primary);
   background-color: var(--bg-primary);
   border: none;
-  border: 1px solid var(--bg-tertiary);  
+  border: 1px solid var(--bg-tertiary);
   border-radius: 0;
   cursor: pointer;
-  -webkit-transition: background-color 70ms cubic-bezier(0.2, 0, 0.38, 0.9), outline 70ms cubic-bezier(0.2, 0, 0.38, 0.9);
-  transition: background-color 70ms cubic-bezier(0.2, 0, 0.38, 0.9), outline 70ms cubic-bezier(0.2, 0, 0.38, 0.9);
+  -webkit-transition: background-color 70ms cubic-bezier(0.2, 0, 0.38, 0.9),
+    outline 70ms cubic-bezier(0.2, 0, 0.38, 0.9);
+  transition: background-color 70ms cubic-bezier(0.2, 0, 0.38, 0.9),
+    outline 70ms cubic-bezier(0.2, 0, 0.38, 0.9);
 }
 
 label.max-btn {
@@ -309,7 +313,7 @@ label.max-btn {
   position: relative;
 }
 .max-header-sub::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -317,7 +321,7 @@ label.max-btn {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   height: 1.5rem;
-  width: .0625rem;
+  width: 0.0625rem;
   background-color: var(--bg-secondary);
 }
 .max-header-sub-text {
@@ -330,14 +334,14 @@ label.max-btn {
   color: var(--text-secondary);
   padding: 0 1rem;
   height: 100%;
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.125rem;
   text-decoration: none;
   border: 2px solid transparent;
-  -webkit-transition: background-color 110ms,border-color 110ms,color 110ms;
-  transition: background-color 110ms,border-color 110ms,color 110ms;
+  -webkit-transition: background-color 110ms, border-color 110ms, color 110ms;
+  transition: background-color 110ms, border-color 110ms, color 110ms;
 }
 
 .max-header-filler {
@@ -416,8 +420,10 @@ label.max-btn {
   -ms-flex-pack: center;
   justify-content: center;
   cursor: pointer;
-  -webkit-transition: outline 110ms cubic-bezier(0, 0, 0.38, 0.9), background-color 110ms cubic-bezier(0, 0, 0.38, 0.9);
-  transition: outline 110ms cubic-bezier(0, 0, 0.38, 0.9), background-color 110ms cubic-bezier(0, 0, 0.38, 0.9);
+  -webkit-transition: outline 110ms cubic-bezier(0, 0, 0.38, 0.9),
+    background-color 110ms cubic-bezier(0, 0, 0.38, 0.9);
+  transition: outline 110ms cubic-bezier(0, 0, 0.38, 0.9),
+    background-color 110ms cubic-bezier(0, 0, 0.38, 0.9);
 }
 .max-toolbar-menu:hover {
   background-color: var(--bg-primary);
@@ -449,7 +455,8 @@ label.max-btn {
   -webkit-transition: -webkit-transform 0.11s cubic-bezier(0.2, 0, 0.38, 0.9);
   transition: -webkit-transform 0.11s cubic-bezier(0.2, 0, 0.38, 0.9);
   transition: transform 0.11s cubic-bezier(0.2, 0, 0.38, 0.9);
-  transition: transform 0.11s cubic-bezier(0.2, 0, 0.38, 0.9), -webkit-transform 0.11s cubic-bezier(0.2, 0, 0.38, 0.9);
+  transition: transform 0.11s cubic-bezier(0.2, 0, 0.38, 0.9),
+    -webkit-transform 0.11s cubic-bezier(0.2, 0, 0.38, 0.9);
   width: 22rem;
 }
 .max-panel.max-panel-expanded {
@@ -459,14 +466,14 @@ label.max-btn {
   transform: translate3d(0, 0, 0);
 }
 .max-panel h1 {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.35rem;
 }
 .max-panel p {
-	display: block;
-	padding-bottom: 0.5rem;
+  display: block;
+  padding-bottom: 0.5rem;
 }
 .max-panel a {
   color: var(--accent-color);
@@ -476,7 +483,7 @@ label.max-btn {
   text-decoration: underline;
 }
 .max-panel dt {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   padding-bottom: 0.75em;
 }
 .max-panel dd {
@@ -580,7 +587,7 @@ label.max-btn {
 }
 .max-field > input[type="text"],
 .max-field > input[type="password"] {
-  width: 100%
+  width: 100%;
 }
 .max-field > select ~ svg {
   fill: #171717;
@@ -594,12 +601,12 @@ label.max-btn {
   top: 2.125rem;
 }
 .max-field > input[type="range"] ~ span[data-max-range] {
-	color: var(--text-primary);
-	display: block;
-	font-size: 0.85rem;
-	font-weight: 600;
-	margin: 0 0.15rem 0.35rem 0;
-	text-align: right;
+  color: var(--text-primary);
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0 0.15rem 0.35rem 0;
+  text-align: right;
 }
 .max-subheader .max-field select {
   background-color: var(--bg-secondary);
@@ -661,7 +668,7 @@ label.max-btn {
 .max-toggle-ui::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   background-color: var(--bg-tertiary);
   cursor: pointer;
   -webkit-box-sizing: border-box;
@@ -673,10 +680,15 @@ label.max-btn {
   will-change: box-shadow;
   -webkit-box-shadow: 0 0 0 2px transparent;
   box-shadow: 0 0 0 2px transparent;
-  -webkit-transition: background-color 70ms cubic-bezier(0.2, 0, 1, 0.9), -webkit-box-shadow 70ms cubic-bezier(0.2, 0, 1, 0.9);
-  transition: background-color 70ms cubic-bezier(0.2, 0, 1, 0.9), -webkit-box-shadow 70ms cubic-bezier(0.2, 0, 1, 0.9);
-  transition: box-shadow 70ms cubic-bezier(0.2, 0, 1, 0.9), background-color 70ms cubic-bezier(0.2, 0, 1, 0.9);
-  transition: box-shadow 70ms cubic-bezier(0.2, 0, 1, 0.9), background-color 70ms cubic-bezier(0.2, 0, 1, 0.9), -webkit-box-shadow 70ms cubic-bezier(0.2, 0, 1, 0.9);
+  -webkit-transition: background-color 70ms cubic-bezier(0.2, 0, 1, 0.9),
+    -webkit-box-shadow 70ms cubic-bezier(0.2, 0, 1, 0.9);
+  transition: background-color 70ms cubic-bezier(0.2, 0, 1, 0.9),
+    -webkit-box-shadow 70ms cubic-bezier(0.2, 0, 1, 0.9);
+  transition: box-shadow 70ms cubic-bezier(0.2, 0, 1, 0.9),
+    background-color 70ms cubic-bezier(0.2, 0, 1, 0.9);
+  transition: box-shadow 70ms cubic-bezier(0.2, 0, 1, 0.9),
+    background-color 70ms cubic-bezier(0.2, 0, 1, 0.9),
+    -webkit-box-shadow 70ms cubic-bezier(0.2, 0, 1, 0.9);
 }
 .max-toggle-ui::after {
   -webkit-box-sizing: border-box;
@@ -690,11 +702,12 @@ label.max-btn {
   height: 1.125rem;
   background-color: #dcdcdc;
   border-radius: 50%;
-  content: '';
+  content: "";
   -webkit-transition: -webkit-transform 70ms cubic-bezier(0.2, 0, 1, 0.9);
   transition: -webkit-transform 70ms cubic-bezier(0.2, 0, 1, 0.9);
   transition: transform 70ms cubic-bezier(0.2, 0, 1, 0.9);
-  transition: transform 70ms cubic-bezier(0.2, 0, 1, 0.9), -webkit-transform 70ms cubic-bezier(0.2, 0, 1, 0.9);
+  transition: transform 70ms cubic-bezier(0.2, 0, 1, 0.9),
+    -webkit-transform 70ms cubic-bezier(0.2, 0, 1, 0.9);
 }
 .max-toggle + .max-toggle-label .max-toggle-ui::before {
   -webkit-box-shadow: 0 0 0 2px transparent;
@@ -784,8 +797,8 @@ input[readonly] {
 .max-loading {
   -webkit-animation-name: rotate;
   animation-name: rotate;
-  -webkit-animation-duration: .69s;
-  animation-duration: .69s;
+  -webkit-animation-duration: 0.69s;
+  animation-duration: 0.69s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
@@ -803,8 +816,8 @@ input[readonly] {
   animation-name: init-stroke;
   -webkit-animation-duration: 10ms;
   animation-duration: 10ms;
-  -webkit-animation-timing-function: cubic-bezier(.2,0,.38,.9);
-  animation-timing-function: cubic-bezier(.2,0,.38,.9);
+  -webkit-animation-timing-function: cubic-bezier(0.2, 0, 0.38, 0.9);
+  animation-timing-function: cubic-bezier(0.2, 0, 0.38, 0.9);
   stroke-width: 8;
   stroke-linecap: butt;
   stroke-dasharray: 240;
@@ -813,18 +826,38 @@ input[readonly] {
 }
 
 @-webkit-keyframes rotate {
-  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 @keyframes rotate {
-  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 @-webkit-keyframes init-stroke {
-  0% { stroke-dashoffset: 240; }
-  100% { stroke-dashoffset: 40; }
+  0% {
+    stroke-dashoffset: 240;
+  }
+  100% {
+    stroke-dashoffset: 40;
+  }
 }
 @keyframes init-stroke {
-  0% { stroke-dashoffset: 240; }
-  100% { stroke-dashoffset: 40; }
+  0% {
+    stroke-dashoffset: 240;
+  }
+  100% {
+    stroke-dashoffset: 40;
+  }
 }

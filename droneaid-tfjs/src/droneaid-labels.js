@@ -1,12 +1,12 @@
 const labels = [
-  'children',
-  'ok',
-  'water',
-  'firstaid',
-  'sos',
-  'shelter',
-  'elderly',
-  'food'
-]
+  "children",
+  "ok",
+  "water",
+  "firstaid",
+  "sos",
+  "shelter",
+  "elderly",
+  "food",
+];
 
-export { labels }
+export { labels };
