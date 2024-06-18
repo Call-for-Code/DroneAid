@@ -30,6 +30,6 @@
   "homepage": "https://github.com/Code-and-Response/DroneAid",
   "dependencies": {
     "express": "^4.19.2",
-    "ws": "^7.4.6"
+    "ws": "^7.5.10"
   }
 }
