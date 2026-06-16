@@ -1,7 +1,7 @@
 # API Framework
 fastapi==0.115.0
 uvicorn[standard]==0.32.0
-python-multipart==0.0.18  # Pinned for FastAPI 0.115.0 form-data support; 0.0.18 is within FastAPI's supported python-multipart range and includes upstream fixes.
+python-multipart==0.0.31  # Pinned for FastAPI 0.115.0 form-data support; 0.0.18 is within FastAPI's supported python-multipart range and includes upstream fixes.
 
 # ML and Computer Vision
 ultralytics==8.3.0
